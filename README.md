@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=0,2,2,5,30&text=Gabriel%20Harnagea&fontSize=46&fontColor=ffffff&fontAlignY=34&animation=fadeIn&desc=DevOps%20%26%20Platform%20Engineer%20%C2%B7%20Azure%20%C2%B7%20Kubernetes%20%C2%B7%20GitOps%20%C2%B7%20Terraform&descAlignY=54&descSize=15" width="100%" alt="Gabriel Harnagea — DevOps & Platform Engineer" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg" width="100%" alt="Gabriel Harnagea — DevOps &amp; Platform Engineer" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer+%C2%B7+Azure+%C2%B7+Kubernetes;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+%26+Agentic+DevOps;Upstream+PRs+to+Kubernetes%2C+Docker%2C+.NET%2C+containerd" alt="Typing SVG" />
 
@@ -151,6 +151,6 @@ I publish on LinkedIn about the parts of the platform people take for granted: A
   <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/output/github-snake.svg" />
 </picture>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=gradient&customColorList=0,2,2,5,30&section=footer" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/footer.svg" width="100%" alt="" />
 
 </div>
