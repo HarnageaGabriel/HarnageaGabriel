@@ -52,17 +52,8 @@
   </g>
 
   <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" text-anchor="middle">
-    <text x="600" y="96" font-size="46" font-weight="700" fill="url(#fade)" letter-spacing="1.5">
-      Gabriel Harnagea
-      <animate attributeName="opacity" from="0" to="1" dur="1.1s" fill="freeze"/>
-    </text>
-    <text x="600" y="132" font-size="16" font-weight="500" fill="#9fb6d0" letter-spacing="3.2">
-      DevOps &amp; Platform Engineer
-      <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="1.2s" fill="freeze"/>
-    </text>
-    <text x="600" y="158" font-size="13" fill="#58a6ff" letter-spacing="2.4">
-      Azure · Kubernetes · GitOps · Terraform
-      <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="1.2s" fill="freeze"/>
-    </text>
+    <text x="600" y="96" font-size="46" font-weight="700" fill="#eaf3ff" letter-spacing="1.5">Gabriel Harnagea</text>
+    <text x="600" y="132" font-size="16" font-weight="500" fill="#9fb6d0" letter-spacing="3.2">DevOps &amp; Platform Engineer</text>
+    <text x="600" y="158" font-size="13" fill="#58a6ff" letter-spacing="2.4">Azure · Kubernetes · GitOps · Terraform</text>
   </g>
 </svg>
