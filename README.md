@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=2" width="100%" alt="Gabriel Harnagea — DevOps &amp; Platform Engineer" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=2" width="100%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer+%C2%B7+Azure+%C2%B7+Kubernetes;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+%26+Agentic+DevOps;Upstream+PRs+to+Kubernetes%2C+Docker%2C+.NET%2C+containerd" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+and+agentic+DevOps;Upstream+PRs+in+Kubernetes%2C+Docker%2C+.NET%2C+containerd" alt="Typing SVG" />
 
 <br/>
 
@@ -17,11 +17,11 @@
 
 ### About
 
-DevOps & Platform Engineer on enterprise projects — CI/CD, Kubernetes, Terraform and cloud cost.
+I'm a DevOps & Platform Engineer on enterprise projects: CI/CD, Kubernetes, Terraform, cloud cost.
 
-I wrote the application code before I ran the infrastructure hosting it. It sounds like a detail, until a build breaks and someone has to know where to look.
+I wrote application code before I ran the infrastructure that hosts it, which pays off mostly when a build breaks and someone has to know where to look.
 
-Most of my open-source work starts the same way: something behaves wrong in a real deployment, I read the source, and the fix goes upstream instead of into a local patch.
+The open-source work here comes from the same place. Something misbehaves in a real deployment, I go read the source, and the fix goes upstream rather than into a patch I keep to myself.
 
 ```yaml
 role:      DevOps & Platform Engineer
@@ -77,7 +77,7 @@ Keycloak with OAuth 2.0 · JWT bearer flows · SeaweedFS through the S3-compatib
 
 ### Upstream contributions
 
-Pull requests to projects I actually run or depend on.
+Pull requests to projects I run or depend on.
 
 | | Project | Change | PR |
 |:-:|---|---|:-:|
@@ -114,14 +114,14 @@ Pull requests to projects I actually run or depend on.
 
 **[github-actions-recipes](https://github.com/HarnageaGabriel/github-actions-recipes)** &nbsp;`YAML`
 
-Runnable GitHub Actions workflows behind my CI/CD and FinOps write-ups — including the cache benchmark measured over 10 real runs on the same runner and dependency tree.
+The workflows behind my CI/CD and FinOps posts, including the caching benchmark I ran 10 times on one runner.
 
 </td>
 <td width="50%" valign="top">
 
 **[token-optimization](https://github.com/HarnageaGabriel/token-optimization)** &nbsp;`PowerShell`
 
-Tooling to cut token consumption in LLM-assisted development workflows — the practical side of keeping agentic DevOps affordable.
+Cuts token usage when you work with LLM coding agents. Setup is idempotent, so re-running it is safe.
 
 </td>
 </tr>
@@ -131,7 +131,7 @@ Tooling to cut token consumption in LLM-assisted development workflows — the p
 
 ### Writing
 
-I publish on LinkedIn about the parts of the platform people take for granted: Azure DevOps expression evaluation, self-hosted runner compliance, GitHub Copilot governance, Azure reservation coverage, and what actually separates agentic DevOps from ordinary automation.
+I write on LinkedIn about platform details that usually pass unchecked: how Azure DevOps resolves its three expression syntaxes, the compliance rules for self-hosted runners, what Copilot code review does and does not decide, and whether an Azure reservation discount is still applying to anything.
 
 <div align="center">
 

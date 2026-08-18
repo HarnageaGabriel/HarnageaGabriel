@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  assets:
+    name: Validate README assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Parse every SVG
+        run: |
+          set -euo pipefail
+          for f in assets/*.svg; do
+            python3 -c "import xml.dom.minidom,sys; xml.dom.minidom.parse(sys.argv[1])" "$f"
+            echo "ok $f"
+          done
+
+      - name: Check every local asset referenced by the README exists
+        run: |
+          set -euo pipefail
+          missing=0
+          for path in $(grep -oE 'HarnageaGabriel/HarnageaGabriel/main/[^"?]+' README.md | sed 's#.*/main/##' | sort -u); do
+            if [ -f "$path" ]; then
+              echo "ok $path"
+            else
+              echo "::error::README references $path, which is not in the repository"
+              missing=1
+            fi
+          done
+          exit $missing
