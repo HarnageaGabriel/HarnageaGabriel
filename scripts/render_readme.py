@@ -117,7 +117,8 @@ def ordered(rows, preferred):
 
 
 EN = {
-    "lang_note": '<sub>English &nbsp;·&nbsp; <a href="README.it.md">Italiano</a></sub>',
+    "lang_note": ('<img src="%s/assets/lang-en-on.svg" alt="English" />'
+                  '&nbsp;<a href="README.it.md"><img src="%s/assets/lang-it-off.svg" alt="Italiano" /></a>') % (RAW, RAW),
     "about": "About",
     "about_body": """I'm a DevOps & Platform Engineer on enterprise projects: CI/CD, Kubernetes, Terraform, cloud cost.
 
@@ -172,7 +173,8 @@ based_in:  Turin, Italy""",
 }
 
 IT = {
-    "lang_note": '<sub><a href="README.md">English</a> &nbsp;·&nbsp; Italiano</sub>',
+    "lang_note": ('<a href="README.md"><img src="%s/assets/lang-en-off.svg" alt="English" /></a>'
+                  '&nbsp;<img src="%s/assets/lang-it-on.svg" alt="Italiano" />') % (RAW, RAW),
     "about": "Chi sono",
     "about_body": """Sono un DevOps & Platform Engineer su progetti enterprise: CI/CD, Kubernetes, Terraform, costi cloud.
 

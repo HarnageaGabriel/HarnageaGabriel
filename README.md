@@ -17,7 +17,7 @@
 <img src="https://img.shields.io/badge/v0.3.0-kubectl%20plugin-0D1117?style=flat-square&labelColor=0D1117&color=1F6FEB" alt="" />
 <img src="https://komarev.com/ghpvc/?username=HarnageaGabriel&style=flat-square&color=1F6FEB&label=PROFILE+VIEWS" alt="" />
 
-<sub>English &nbsp;·&nbsp; <a href="README.it.md">Italiano</a></sub>
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-en-on.svg" alt="English" />&nbsp;<a href="README.it.md"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-it-off.svg" alt="Italiano" /></a>
 
 </div>
 
