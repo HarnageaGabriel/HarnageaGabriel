@@ -30,16 +30,27 @@ jobs:
             echo "ok $f"
           done
 
-      - name: Check every local asset referenced by the README exists
+      - name: Check every local asset referenced by a README exists
         run: |
           set -euo pipefail
           missing=0
-          for path in $(grep -oE 'HarnageaGabriel/HarnageaGabriel/main/[^"?]+' README.md | sed 's#.*/main/##' | sort -u); do
+          for path in $(grep -hoE 'HarnageaGabriel/HarnageaGabriel/main/[^"?]+' README.md README.it.md | sed 's#.*/main/##' | sort -u); do
             if [ -f "$path" ]; then
               echo "ok $path"
             else
-              echo "::error::README references $path, which is not in the repository"
+              echo "::error::A README references $path, which is not in the repository"
               missing=1
             fi
           done
           exit $missing
+
+      - name: Check the two READMEs have the same section count
+        run: |
+          set -euo pipefail
+          en=$(grep -c '^## ' README.md)
+          it=$(grep -c '^## ' README.it.md)
+          echo "English sections: $en, Italian sections: $it"
+          if [ "$en" != "$it" ]; then
+            echo "::error::README.md and README.it.md are out of sync ($en vs $it sections). Re-run scripts/render_readme.py"
+            exit 1
+          fi
