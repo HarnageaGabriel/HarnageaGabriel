@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591.3 38" width="591.3" height="38" role="img" aria-label="">
+  <rect x="0.5" y="0.5" width="590.3" height="37" rx="10" fill="#10161f" stroke="#2b3949"/>
+  <text x="22" y="24.6" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15.0" font-weight="700" fill="#58a6ff" letter-spacing="0.5">8</text>
+  <text x="42" y="24.2" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="500" fill="#8b9cb0" letter-spacing="1.4">MERGED UPSTREAM</text>
+  <line x1="178.1" y1="10" x2="178.1" y2="28" stroke="#2b3949" stroke-width="1"/>
+  <text x="200.1" y="24.6" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15.0" font-weight="700" fill="#58a6ff" letter-spacing="0.5">37</text>
+  <text x="229.6" y="24.2" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="500" fill="#8b9cb0" letter-spacing="1.4">PROJECTS TOUCHED</text>
+  <line x1="373.4" y1="10" x2="373.4" y2="28" stroke="#2b3949" stroke-width="1"/>
+  <text x="395.4" y="24.6" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15.0" font-weight="700" fill="#58a6ff" letter-spacing="0.5">v0.3.0</text>
+  <text x="462.9" y="24.2" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="500" fill="#8b9cb0" letter-spacing="1.4">KUBECTL PLUGIN</text>
+</svg>

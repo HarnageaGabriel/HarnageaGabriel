@@ -1,20 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 30" width="105" height="30" role="img" aria-label="English">
-  <defs>
-    <clipPath id="flagclip"><rect x="0" y="0" width="20" height="14" rx="1.5"/></clipPath>
-  </defs>
-
-  <rect x="0.5" y="0.5" width="104" height="29" rx="6" fill="#161b22" stroke="#30363d"/>
-
-  <g transform="translate(11 8)">
-  <g clip-path="url(#flagclip)">
-    <rect x="0" y="0" width="20" height="14" fill="#012169"/>
-    <path d="M0 0 L20 14 M20 0 L0 14" stroke="#FFFFFF" stroke-width="2.8"/>
-    <path d="M0 0 L20 14 M20 0 L0 14" stroke="#C8102E" stroke-width="1.4"/>
-    <path d="M10 0 V14 M0 7 H20" stroke="#FFFFFF" stroke-width="4.2"/>
-    <path d="M10 0 V14 M0 7 H20" stroke="#C8102E" stroke-width="2.4"/>
-  </g>
-    <rect x="0.25" y="0.25" width="19.5" height="13.5" rx="1.5" fill="none" stroke="#0d1117" stroke-opacity="0.35"/>
-  </g>
-
-  <text x="38" y="19" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="500" fill="#8b949e" letter-spacing="0.6">English</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.1 34" width="115.1" height="34" role="img" aria-label="ENGLISH">
+  <defs><clipPath id="flagclip"><rect x="0" y="0" width="22" height="15" rx="2"/></clipPath></defs>
+  <rect x="0.5" y="0.5" width="114.1" height="33" rx="9" fill="#10161f" stroke="#2b3949"/>
+  <g transform="translate(13 9.5)"><g clip-path="url(#flagclip)"><rect width="22" height="15" fill="#012169"/><path d="M0 0 L22 15 M22 0 L0 15" stroke="#ffffff" stroke-width="3"/><path d="M0 0 L22 15 M22 0 L0 15" stroke="#C8102E" stroke-width="1.5"/><path d="M11 0 V15 M0 7.5 H22" stroke="#ffffff" stroke-width="4.6"/><path d="M11 0 V15 M0 7.5 H22" stroke="#C8102E" stroke-width="2.6"/></g><rect x="0.25" y="0.25" width="21.5" height="14.5" rx="2" fill="none" stroke="#0d1117" stroke-opacity="0.4"/></g>
+  <text x="44" y="22.3" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="600" fill="#8b9cb0" letter-spacing="1.3">ENGLISH</text>
 </svg>

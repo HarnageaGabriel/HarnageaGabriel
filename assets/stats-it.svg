@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606.7 38" width="606.7" height="38" role="img" aria-label="">
+  <rect x="0.5" y="0.5" width="605.7" height="37" rx="10" fill="#10161f" stroke="#2b3949"/>
+  <text x="22" y="24.6" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15.0" font-weight="700" fill="#58a6ff" letter-spacing="0.5">8</text>
+  <text x="42" y="24.2" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="500" fill="#8b9cb0" letter-spacing="1.4">MERGIATE UPSTREAM</text>
+  <line x1="193.5" y1="10" x2="193.5" y2="28" stroke="#2b3949" stroke-width="1"/>
+  <text x="215.5" y="24.6" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15.0" font-weight="700" fill="#58a6ff" letter-spacing="0.5">37</text>
+  <text x="245" y="24.2" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="500" fill="#8b9cb0" letter-spacing="1.4">PROGETTI TOCCATI</text>
+  <line x1="388.8" y1="10" x2="388.8" y2="28" stroke="#2b3949" stroke-width="1"/>
+  <text x="410.8" y="24.6" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15.0" font-weight="700" fill="#58a6ff" letter-spacing="0.5">v0.3.0</text>
+  <text x="478.3" y="24.2" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="500" fill="#8b9cb0" letter-spacing="1.4">PLUGIN KUBECTL</text>
+</svg>

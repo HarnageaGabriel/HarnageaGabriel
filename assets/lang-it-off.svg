@@ -1,18 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 30" width="112" height="30" role="img" aria-label="Italiano">
-  <defs>
-    <clipPath id="flagclip"><rect x="0" y="0" width="20" height="14" rx="1.5"/></clipPath>
-  </defs>
-
-  <rect x="0.5" y="0.5" width="111" height="29" rx="6" fill="#161b22" stroke="#30363d"/>
-
-  <g transform="translate(11 8)">
-  <g clip-path="url(#flagclip)">
-    <rect x="0" y="0" width="6.67" height="14" fill="#008C45"/>
-    <rect x="6.67" y="0" width="6.66" height="14" fill="#F4F5F0"/>
-    <rect x="13.33" y="0" width="6.67" height="14" fill="#CD212A"/>
-  </g>
-    <rect x="0.25" y="0.25" width="19.5" height="13.5" rx="1.5" fill="none" stroke="#0d1117" stroke-opacity="0.35"/>
-  </g>
-
-  <text x="38" y="19" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="500" fill="#8b949e" letter-spacing="0.6">Italiano</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123.3 34" width="123.3" height="34" role="img" aria-label="ITALIANO">
+  <defs><clipPath id="flagclip"><rect x="0" y="0" width="22" height="15" rx="2"/></clipPath></defs>
+  <rect x="0.5" y="0.5" width="122.3" height="33" rx="9" fill="#10161f" stroke="#2b3949"/>
+  <g transform="translate(13 9.5)"><g clip-path="url(#flagclip)"><rect width="7.34" height="15" fill="#008C45"/><rect x="7.34" y="0" width="7.33" height="15" fill="#F4F5F0"/><rect x="14.67" y="0" width="7.33" height="15" fill="#CD212A"/></g><rect x="0.25" y="0.25" width="21.5" height="14.5" rx="2" fill="none" stroke="#0d1117" stroke-opacity="0.4"/></g>
+  <text x="44" y="22.3" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="600" fill="#8b9cb0" letter-spacing="1.3">ITALIANO</text>
 </svg>
