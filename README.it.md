@@ -6,18 +6,15 @@
 
 <br/>
 
-<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="LinkedIn" /></a>
-<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" /></a>
-<img src="https://img.shields.io/badge/TURIN%20%C2%B7%20ITALY-1F6FEB?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=0D1117" alt="Turin, Italy" />
+<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=3" alt="LinkedIn" /></a>&nbsp;<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-email.svg?v=3" alt="Email" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-location-it.svg?v=3" alt="TORINO, ITALIA" />
 
 <br/>
 
-<img src="https://img.shields.io/badge/6-mergiate%20upstream-0D1117?style=flat-square&labelColor=0D1117&color=1F6FEB" alt="" />
-<img src="https://img.shields.io/badge/37-progetti%20toccati-0D1117?style=flat-square&labelColor=0D1117&color=1F6FEB" alt="" />
-<img src="https://img.shields.io/badge/v0.3.0-plugin%20kubectl-0D1117?style=flat-square&labelColor=0D1117&color=1F6FEB" alt="" />
-<img src="https://komarev.com/ghpvc/?username=HarnageaGabriel&style=flat-square&color=1F6FEB&label=VISITE+AL+PROFILO" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/stats-it.svg?v=3" alt="" />
 
-<a href="README.md"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-en-off.svg" alt="English" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-it-on.svg" alt="Italiano" />
+<br/>
+
+<a href="README.md"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-en-off.svg?v=3" alt="English" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-it-on.svg?v=3" alt="Italiano" />
 
 </div>
 
@@ -100,7 +97,7 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 
 ## `▸` Contributi upstream
 
-46 pull request su 37 progetti che uso o da cui dipendo. 6 già mergiate, 36 ancora in review.
+46 pull request su 37 progetti che uso o da cui dipendo. 8 già mergiate, 33 ancora in review.
 
 **Mergiate**
 
@@ -112,9 +109,11 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **DapperLib/DapperAOT** | Fix false-positive DAP214 for {=XXX} literal-replacement syntax | [`#191`](https://github.com/DapperLib/DapperAOT/pull/191) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nunit/nunit-console** | Add AssemblyTargetFramework to IExtensionNode | [`#1867`](https://github.com/nunit/nunit-console/pull/1867) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nunit/nunit-console** | Fix --list-extensions showing wrong target framework for extensions | [`#1861`](https://github.com/nunit/nunit-console/pull/1861) |
+|  | **Azure/azure-powershell** | Fix Get-AzSubscription silently ignoring mismatched -TenantId under MSI auth | [`#29994`](https://github.com/Azure/azure-powershell/pull/29994) |
+| <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **quartznet/quartznet** | Add job type exclusion filter to trigger acquisition | [`#3282`](https://github.com/quartznet/quartznet/pull/3282) |
 
 <details>
-<summary><b>In review</b> (36 pull request aperte)</summary>
+<summary><b>In review</b> (33 pull request aperte)</summary>
 
 | | Progetto | Modifica | PR |
 |:-:|---|---|:-:|
@@ -132,7 +131,6 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 | <img src="https://cdn.simpleicons.org/cncf/231F20" width="18"/> | **spiffe/spire** | Fix inaccurate expiring/outdated SVID sync metrics | [`#7230`](https://github.com/spiffe/spire/pull/7230) |
 | <img src="https://cdn.simpleicons.org/thanos/6D49FF" width="18"/> | **thanos-io/objstore** | Support a custom GCS API endpoint through the endpoint config option | [`#270`](https://github.com/thanos-io/objstore/pull/270) |
 | <img src="https://cdn.simpleicons.org/saltproject/57BCAD" width="18"/> | **saltstack/salt** | Fix file.managed omitting mode from changes when creating a file | [`#70084`](https://github.com/saltstack/salt/pull/70084) |
-| <img src="https://cdn.simpleicons.org/saltproject/57BCAD" width="18"/> | **saltstack/salt** | Fix module.run: positional arg for defaulted param raises 'multiple values' | [`#70083`](https://github.com/saltstack/salt/pull/70083) |
 | <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **BurntSushi/ripgrep** | Detect compressed files by magic number in search-zip, not just by extension | [`#3516`](https://github.com/BurntSushi/ripgrep/pull/3516) |
 | <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **BurntSushi/ripgrep** | Fix the dangling backslash error for an escaped trailing space | [`#3515`](https://github.com/BurntSushi/ripgrep/pull/3515) |
 | <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **tokio-rs/tracing** | Add an opt-in field value truncation wrapper to the subscriber | [`#3600`](https://github.com/tokio-rs/tracing/pull/3600) |
@@ -142,13 +140,11 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **dotnet/msbuild** | Disable nullable analysis for net4x leg of multi-targeted projects | [`#14738`](https://github.com/dotnet/msbuild/pull/14738) |
 | <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Fix Sentinel connection leak and AbortOnConnectFail=false handling | [`#3187`](https://github.com/StackExchange/StackExchange.Redis/pull/3187) |
 | <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Make fallback discovery and keep-alive probes cluster-slot aware | [`#3185`](https://github.com/StackExchange/StackExchange.Redis/pull/3185) |
-| <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **quartznet/quartznet** | Add job type exclusion filter to trigger acquisition | [`#3282`](https://github.com/quartznet/quartznet/pull/3282) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **NLog/NLog** | Change the DateLayoutRenderer default format to yyyy-MM-dd HH:mm:ss.ffff | [`#6252`](https://github.com/NLog/NLog/pull/6252) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nsubstitute/NSubstitute** | Document that Received.InOrder does not track property getters | [`#998`](https://github.com/nsubstitute/NSubstitute/pull/998) |
 | <img src="https://cdn.simpleicons.org/nuget/004880" width="18"/> | **dotnet-outdated/dotnet-outdated** | Report packages whose source repository is archived or deleted | [`#781`](https://github.com/dotnet-outdated/dotnet-outdated/pull/781) |
 | <img src="https://cdn.simpleicons.org/ansible/EE0000" width="18"/> | **ansible/terraform-provider-aap** | Remove aap_host from state on 404 during Read | [`#194`](https://github.com/ansible/terraform-provider-aap/pull/194) |
 | <img src="https://cdn.simpleicons.org/traefikproxy/24A1C1" width="18"/> | **traefik/traefik-helm-chart** | Restore secretResourceNames for namespaced Role | [`#1972`](https://github.com/traefik/traefik-helm-chart/pull/1972) |
-|  | **Azure/azure-powershell** | Fix Get-AzSubscription silently ignoring mismatched -TenantId under MSI auth | [`#29994`](https://github.com/Azure/azure-powershell/pull/29994) |
 |  | **HangfireIO/Hangfire** | Don't disable recurring jobs on transient storage errors | [`#2589`](https://github.com/HangfireIO/Hangfire/pull/2589) |
 | <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-events** | Close NATS connection when trigger connection init fails | [`#4158`](https://github.com/argoproj/argo-events/pull/4158) |
 |  | **temporalio/temporal** | Fail batch operations when Visibility queries time out repeatedly | [`#11753`](https://github.com/temporalio/temporal/pull/11753) |
@@ -192,6 +188,10 @@ Su LinkedIn scrivo dei dettagli di piattaforma che di solito nessuno verifica: c
 <img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/footer.svg?v=2" width="100%" alt="" />
 
 <a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://img.shields.io/badge/Scrivimi-1F6FEB?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0D1117" alt="" /></a>
-<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="" /></a>
+<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=3" alt="LinkedIn" /></a>
+
+<br/>
+
+<sub><img src="https://komarev.com/ghpvc/?username=HarnageaGabriel&style=flat-square&color=1F6FEB&labelColor=10161F&label=VISITE+AL+PROFILO" alt="" /></sub>
 
 </div>

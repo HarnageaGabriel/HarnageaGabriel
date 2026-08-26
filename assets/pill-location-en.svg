@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.1 34" width="150.1" height="34" role="img" aria-label="TURIN, ITALY">
+  <rect x="0.5" y="0.5" width="149.1" height="33" rx="9" fill="#10161f" stroke="#2b3949"/>
+  <g transform="translate(13 9)"><path d="M8 1 C5.1 1 2.7 3.4 2.7 6.3 c0 3.8 5.3 8.7 5.3 8.7 s5.3 -4.9 5.3 -8.7 C13.3 3.4 10.9 1 8 1 z" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-linejoin="round"/><circle cx="8" cy="6.2" r="1.9" fill="#58a6ff"/></g>
+  <text x="38" y="22.3" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="600" fill="#c9d6e4" letter-spacing="1.3">TURIN, ITALY</text>
+</svg>
