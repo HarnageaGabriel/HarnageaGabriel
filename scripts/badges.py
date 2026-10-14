@@ -161,7 +161,7 @@ def stats_bar(cells):
     return document(total, height, "\n".join(parts))
 
 
-def write_all(root, en, it, merged_count, project_count, plugin_version):
+def write_all(root, en, it, merged_count, project_count, own_count):
     files = {
         "pill-linkedin.svg": pill("LINKEDIN", "linkedin", filled=True),
         "pill-email.svg": pill("EMAIL", "email"),
@@ -176,7 +176,7 @@ def write_all(root, en, it, merged_count, project_count, plugin_version):
         files["stats-%s.svg" % code] = stats_bar([
             (str(merged_count), strings["badge_merged"]),
             (str(project_count), strings["badge_projects"]),
-            (plugin_version, strings["badge_plugin"]),
+            (str(own_count), strings["badge_own"]),
         ])
     for name, content in files.items():
         path = os.path.join(root, "assets", name)

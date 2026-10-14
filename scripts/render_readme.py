@@ -21,7 +21,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import badges
 
 USER = "HarnageaGabriel"
-PLUGIN_VERSION = "v0.3.0"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = "https://raw.githubusercontent.com/%s/%s/main" % (USER, USER)
 
@@ -201,7 +200,7 @@ based_in:  Turin, Italy""",
     "footer_cta": "Get in touch",
     "badge_merged": "MERGED UPSTREAM",
     "badge_projects": "PROJECTS TOUCHED",
-    "badge_plugin": "KUBECTL PLUGIN",
+    "badge_own": "MY PROJECTS",
     "views": "PROFILE VIEWS",
 }
 
@@ -269,7 +268,7 @@ dove:      Torino, Italia""",
     "footer_cta": "Scrivimi",
     "badge_merged": "MERGIATE UPSTREAM",
     "badge_projects": "PROGETTI TOCCATI",
-    "badge_plugin": "PLUGIN KUBECTL",
+    "badge_own": "PROGETTI MIEI",
     "views": "VISITE AL PROFILO",
 }
 
@@ -289,7 +288,7 @@ def render(t, prs, totals, typing_lines):
              '&nbsp;<img src="%s/assets/pill-location-%s.svg?v=3" alt="%s" />\n'
              % (RAW, RAW, RAW, t["lang"], t["location"]))
     o.append('<br/>\n')
-    o.append('<img src="%s/assets/stats-%s.svg?v=3" alt="" />\n' % (RAW, t["lang"]))
+    o.append('<img src="%s/assets/stats-%s.svg?v=4" alt="" />\n' % (RAW, t["lang"]))
     o.append('<br/>\n')
     o.append(t["lang_note"] + "\n")
     o.append('</div>\n')
@@ -382,7 +381,8 @@ def main():
         ROOT, EN, IT,
         merged_count=totals["merged"],
         project_count=totals["projects"],
-        plugin_version=PLUGIN_VERSION,
+        # trasloco is featured on its own, the rest are table rows.
+        own_count=1 + len(EN["projects_rows"]),
     )
     print("wrote %d badge assets" % len(written))
     for name, strings, typing in (("README.md", EN, TYPING_EN), ("README.it.md", IT, TYPING_IT)):

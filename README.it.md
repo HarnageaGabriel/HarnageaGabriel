@@ -10,7 +10,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/stats-it.svg?v=3" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/stats-it.svg?v=4" alt="" />
 
 <br/>
 
