@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=2" width="100%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;FinOps+e+agentic+DevOps;PR+upstream+su+Kubernetes%2C+Docker%2C+.NET%2C+containerd" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;FinOps+e+agentic+DevOps;Strumenti+OSS%3A+migrazione+pipeline%2C+rollout%2C+certificati+TLS" alt="" />
 
 <br/>
 
@@ -26,16 +26,41 @@ Sono un DevOps & Platform Engineer su progetti enterprise: CI/CD, Kubernetes, Te
 
 Ho scritto codice applicativo prima di gestire l'infrastruttura che lo ospita, e questo serve soprattutto quando una build si rompe e qualcuno deve sapere dove guardare.
 
-Il lavoro open source qui sopra nasce allo stesso modo. Qualcosa si comporta male in un deployment reale, vado a leggere il sorgente, e la correzione finisce upstream invece che in una patch che tengo per me.
+Il lavoro open source qui sopra nasce allo stesso modo: per lo più strumenti piccoli, read-only e deterministici, per problemi che incontro in deployment reali, e quando il bug è nel codice di qualcun altro la correzione finisce upstream invece che in una patch che tengo per me.
 
 ```yaml
 ruolo:     DevOps & Platform Engineer
+progetti:  [trasloco, kubectl-safe-rollout, scadenza, disdetta]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 anche:     [FinOps, Agentic DevOps, backend .NET]
 linguaggi: [C#, TypeScript, Go, Rust, Python, Bash, PowerShell]
 mi_occupo: [bug di correttezza, buchi di osservabilità, release plumbing, costi cloud]
 dove:      Torino, Italia
 ```
+
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+
+## `▸` Progetti
+
+### [trasloco](https://github.com/HarnageaGabriel/trasloco)
+
+Uno strumento open source, in lavorazione, per spostare pipeline CI/CD tra Azure DevOps, GitHub e altro. Prevedibile e revisionabile per design: plan/apply, deterministico.
+
+Già usabile oggi per trovare i task Azure Pipelines dismessi, come mostra la sua sezione [Try it now](https://github.com/HarnageaGabriel/trasloco#try-it-now-find-retired-azure-pipelines-tasks). Il repo companion [trasloco-e2e](https://github.com/HarnageaGabriel/trasloco-e2e) esegue le pipeline generate su runner reali.
+
+<img src="https://img.shields.io/badge/pre--alpha-9E6A03?style=for-the-badge&labelColor=0D1117" alt="" /> <img src="https://img.shields.io/badge/Apache--2.0-1F6FEB?style=for-the-badge&labelColor=0D1117" alt="" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&labelColor=0D1117" alt="" />
+
+| | Progetto | Cos'è | Stack | Stato |
+|:-:|---|---|---|:-:|
+| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[kubectl-safe-rollout](https://github.com/HarnageaGabriel/kubectl-safe-rollout)** | Plugin kubectl che spiega perché un rollout è fallito o si è bloccato: classificazione deterministica, nessun LLM, e non scrive mai sul cluster | `Go` `client-go` | <img src="https://img.shields.io/badge/v0.3.0-1F6FEB?style=flat-square&labelColor=0D1117" alt="" /> |
+| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[scadenza](https://github.com/HarnageaGabriel/scadenza)** | Quali certificati TLS pubblici non sopravviveranno a lifetime da 100 giorni. Unisce i log di Certificate Transparency, gli handshake TLS reali, Kubernetes/cert-manager e Azure Key Vault in un unico inventario: dove vive ogni certificato, chi lo rinnova e se il rinnovo è automatico. Read-only | `Go` | <img src="https://img.shields.io/badge/pre--alpha-9E6A03?style=flat-square&labelColor=0D1117" alt="" /> |
+| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[disdetta](https://github.com/HarnageaGabriel/disdetta)** | Trova le dipendenze Bitnami (immagini bitnamilegacy, dal 2025-08-28) in repository, cluster e repo GitOps, e pianifica l'uscita componente per componente. Read-only, deterministico, nessuna telemetria | `Go` | <img src="https://img.shields.io/badge/pre--alpha-9E6A03?style=flat-square&labelColor=0D1117" alt="" /> |
+| <img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="20" alt="" /> | **[github-actions-recipes](https://github.com/HarnageaGabriel/github-actions-recipes)** | I workflow dietro ai miei post su CI/CD e FinOps, una variabile isolata per ricetta | `GitHub Actions` | <img src="https://img.shields.io/badge/live-238636?style=flat-square&labelColor=0D1117" alt="" /> |
+| <img src="https://skillicons.dev/icons?i=powershell&theme=dark" width="20" alt="" /> | **[token-optimization](https://github.com/HarnageaGabriel/token-optimization)** | Bootstrap idempotente che riduce il consumo di token quando lavori con agenti LLM | `PowerShell` | <img src="https://img.shields.io/badge/live-238636?style=flat-square&labelColor=0D1117" alt="" /> |
+
+Gli strumenti Go qui condividono la stessa forma: binario singolo, read-only di default, deterministici, nessuna telemetria, Apache-2.0.
+
+`kubectl-safe-rollout` è [in submission su krew-index](https://github.com/kubernetes-sigs/krew-index/pull/6213), quindi sarà installabile con `kubectl krew install safe-rollout`.
 
 <img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
 
@@ -95,38 +120,56 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 
 <img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
 
-## `▸` Contributi upstream
+## `▸` Scrivo
 
-46 pull request su 37 progetti che uso o da cui dipendo. 8 già mergiate, 33 ancora in review.
+Su LinkedIn scrivo dei dettagli di piattaforma che di solito nessuno verifica: come Azure DevOps risolve le sue tre sintassi di espressione, le regole di conformità per i runner self-hosted, cosa decide e cosa non decide la code review di Copilot, e se lo sconto di una reservation Azure si sta ancora applicando a qualcosa.
 
-**Mergiate**
+<div align="center">
+
+<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://img.shields.io/badge/Leggi%20su%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="" /></a>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+
+## `▸` Correzioni upstream
+
+53 pull request su 42 progetti che uso o da cui dipendo. 13 già mergiate, 30 ancora in review.
+
+<details>
+<summary><b>Mergiate</b> (13 pull request mergiate)</summary>
 
 | | Progetto | Modifica | PR |
 |:-:|---|---|:-:|
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **dotnet/runtime** | Fix CompareInfo.IsPrefix/IsSuffix with CompareOptions.IgnoreSymbols not ignoring leading/trailing symbols | [`#132397`](https://github.com/dotnet/runtime/pull/132397) |
 | <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes-sigs/apiserver-network-proxy** | Add connection_duration_seconds histogram for post-dial connection lifespan | [`#899`](https://github.com/kubernetes-sigs/apiserver-network-proxy/pull/899) |
+| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Fix Sentinel connection leak and AbortOnConnectFail=false handling | [`#3187`](https://github.com/StackExchange/StackExchange.Redis/pull/3187) |
 | <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Add NOMKSTREAM support to XADD | [`#3186`](https://github.com/StackExchange/StackExchange.Redis/pull/3186) |
+| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Make fallback discovery and keep-alive probes cluster-slot aware | [`#3185`](https://github.com/StackExchange/StackExchange.Redis/pull/3185) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **DapperLib/DapperAOT** | Fix false-positive DAP214 for {=XXX} literal-replacement syntax | [`#191`](https://github.com/DapperLib/DapperAOT/pull/191) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nunit/nunit-console** | Add AssemblyTargetFramework to IExtensionNode | [`#1867`](https://github.com/nunit/nunit-console/pull/1867) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nunit/nunit-console** | Fix --list-extensions showing wrong target framework for extensions | [`#1861`](https://github.com/nunit/nunit-console/pull/1861) |
 |  | **Azure/azure-powershell** | Fix Get-AzSubscription silently ignoring mismatched -TenantId under MSI auth | [`#29994`](https://github.com/Azure/azure-powershell/pull/29994) |
+| <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-events** | Close NATS connection when trigger connection init fails | [`#4158`](https://github.com/argoproj/argo-events/pull/4158) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **quartznet/quartznet** | Add job type exclusion filter to trigger acquisition | [`#3282`](https://github.com/quartznet/quartznet/pull/3282) |
+| <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **rust-embedded/heapless** | Add shift_remove family to IndexMap/IndexSet | [`#685`](https://github.com/rust-embedded/heapless/pull/685) |
+| <img src="https://cdn.simpleicons.org/traefikproxy/24A1C1" width="18"/> | **traefik/traefik-helm-chart** | Restore secretResourceNames for namespaced role | [`#1972`](https://github.com/traefik/traefik-helm-chart/pull/1972) |
+
+</details>
 
 <details>
-<summary><b>In review</b> (33 pull request aperte)</summary>
+<summary><b>In review</b> (30 pull request aperte)</summary>
 
 | | Progetto | Modifica | PR |
 |:-:|---|---|:-:|
 | <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **moby/moby** | Bridge: repair stale WSL2Mirrored loopback0 drop rules | [`#53458`](https://github.com/moby/moby/pull/53458) |
-| <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **moby/moby** | Reuse per-host authorizers across a pull in the c8d resolver | [`#53457`](https://github.com/moby/moby/pull/53457) |
 | <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes/kube-openapi** | Fix duplicate map keys when a type embeds two structs sharing a field | [`#631`](https://github.com/kubernetes/kube-openapi/pull/631) |
-| <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes-sigs/krew-index** | Add safe-rollout plugin | [`#6213`](https://github.com/kubernetes-sigs/krew-index/pull/6213) |
 | <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes/perf-tests** | Add unit tests for clusterloader2/pkg/errors | [`#4261`](https://github.com/kubernetes/perf-tests/pull/4261) |
+| <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **docker/cli** | Cli/command/image: trim iidfile image ID and fail clearly when missing | [`#7279`](https://github.com/docker/cli/pull/7279) |
 | <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **docker/cli** | Normalize the registry server address to lowercase for credential lookup | [`#7184`](https://github.com/docker/cli/pull/7184) |
 | <img src="https://cdn.simpleicons.org/containerd/575757" width="18"/> | **containerd/runwasi** | Gate ctr image import --local by detected ctr version | [`#1177`](https://github.com/containerd/runwasi/pull/1177) |
 | <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-cd** | Add ignoreDraft filter to ApplicationSet Pull Request generator | [`#29265`](https://github.com/argoproj/argo-cd/pull/29265) |
 | <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-rollouts** | Stop degraded stable RS from permanently blocking subset DestinationRule switch | [`#4990`](https://github.com/argoproj/argo-rollouts/pull/4990) |
-| <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-workflows** | Scope RemoveFromQueue to the calling controller | [`#16739`](https://github.com/argoproj/argo-workflows/pull/16739) |
 | <img src="https://cdn.simpleicons.org/cncf/231F20" width="18"/> | **open-policy-agent/opa** | Make allow_net restrict file:// refs in JSON schemas | [`#9044`](https://github.com/open-policy-agent/opa/pull/9044) |
 | <img src="https://cdn.simpleicons.org/cncf/231F20" width="18"/> | **spiffe/spire** | Fix inaccurate expiring/outdated SVID sync metrics | [`#7230`](https://github.com/spiffe/spire/pull/7230) |
 | <img src="https://cdn.simpleicons.org/thanos/6D49FF" width="18"/> | **thanos-io/objstore** | Support a custom GCS API endpoint through the endpoint config option | [`#270`](https://github.com/thanos-io/objstore/pull/270) |
@@ -135,21 +178,20 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 | <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **BurntSushi/ripgrep** | Fix the dangling backslash error for an escaped trailing space | [`#3515`](https://github.com/BurntSushi/ripgrep/pull/3515) |
 | <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **tokio-rs/tracing** | Add an opt-in field value truncation wrapper to the subscriber | [`#3600`](https://github.com/tokio-rs/tracing/pull/3600) |
 | <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **dtolnay/cxx** | Strip r# prefix from raw identifiers in generated C++ names | [`#1749`](https://github.com/dtolnay/cxx/pull/1749) |
-| <img src="https://cdn.simpleicons.org/rust/DEA584" width="18"/> | **rust-embedded/heapless** | Add shift_remove family to IndexMap/IndexSet | [`#685`](https://github.com/rust-embedded/heapless/pull/685) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **dotnet/runtime** | Return empty string instead of throwing when getpwuid_r fails unexpectedly | [`#132396`](https://github.com/dotnet/runtime/pull/132396) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **dotnet/msbuild** | Disable nullable analysis for net4x leg of multi-targeted projects | [`#14738`](https://github.com/dotnet/msbuild/pull/14738) |
-| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Fix Sentinel connection leak and AbortOnConnectFail=false handling | [`#3187`](https://github.com/StackExchange/StackExchange.Redis/pull/3187) |
-| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Make fallback discovery and keep-alive probes cluster-slot aware | [`#3185`](https://github.com/StackExchange/StackExchange.Redis/pull/3185) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **NLog/NLog** | Change the DateLayoutRenderer default format to yyyy-MM-dd HH:mm:ss.ffff | [`#6252`](https://github.com/NLog/NLog/pull/6252) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nsubstitute/NSubstitute** | Document that Received.InOrder does not track property getters | [`#998`](https://github.com/nsubstitute/NSubstitute/pull/998) |
 | <img src="https://cdn.simpleicons.org/nuget/004880" width="18"/> | **dotnet-outdated/dotnet-outdated** | Report packages whose source repository is archived or deleted | [`#781`](https://github.com/dotnet-outdated/dotnet-outdated/pull/781) |
 | <img src="https://cdn.simpleicons.org/ansible/EE0000" width="18"/> | **ansible/terraform-provider-aap** | Remove aap_host from state on 404 during Read | [`#194`](https://github.com/ansible/terraform-provider-aap/pull/194) |
-| <img src="https://cdn.simpleicons.org/traefikproxy/24A1C1" width="18"/> | **traefik/traefik-helm-chart** | Restore secretResourceNames for namespaced Role | [`#1972`](https://github.com/traefik/traefik-helm-chart/pull/1972) |
 |  | **HangfireIO/Hangfire** | Don't disable recurring jobs on transient storage errors | [`#2589`](https://github.com/HangfireIO/Hangfire/pull/2589) |
-| <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-events** | Close NATS connection when trigger connection init fails | [`#4158`](https://github.com/argoproj/argo-events/pull/4158) |
+|  | **johnlokerse/awesome-azure-devops** | Add trasloco to Community Tools and Extensions | [`#27`](https://github.com/johnlokerse/awesome-azure-devops/pull/27) |
+|  | **martcus/awesome-azure-devops** | Add trasloco to pipelines | [`#7`](https://github.com/martcus/awesome-azure-devops/pull/7) |
+|  | **sdras/awesome-actions** | Add trasloco modernize to Linting | [`#991`](https://github.com/sdras/awesome-actions/pull/991) |
 |  | **temporalio/temporal** | Fail batch operations when Visibility queries time out repeatedly | [`#11753`](https://github.com/temporalio/temporal/pull/11753) |
+| <img src="https://cdn.simpleicons.org/thanos/6D49FF" width="18"/> | **thanos-io/thanos** | Filter: prune StoreAPI fan-out for enumerable regex __name__ matchers | [`#9006`](https://github.com/thanos-io/thanos/pull/9006) |
+|  | **tikv/tikv** | Storage: expose scheduler write-latch memory usage | [`#20060`](https://github.com/tikv/tikv/pull/20060) |
 |  | **tikv/tikv** | Tikv_util: fix undefined behavior in RangeLatchGuard's Drop impl | [`#20022`](https://github.com/tikv/tikv/pull/20022) |
-|  | **zed-industries/zed** | Retain worktrees with uncommitted changes when archiving agent threads | [`#63163`](https://github.com/zed-industries/zed/pull/63163) |
 
 </details>
 
@@ -160,28 +202,6 @@ Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatib
 </div>
 
 <img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
-
-## `▸` Progetti
-
-| | Progetto | Cos'è | Stack | |
-|:-:|---|---|---|:-:|
-| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[kubectl-safe-rollout](https://github.com/HarnageaGabriel/kubectl-safe-rollout)** | Plugin kubectl che spiega perché un rollout è fallito o si è bloccato. Classificazione deterministica, nessun LLM, e non scrive mai sul cluster | `Go` `client-go` | `v0.3.0` |
-| <img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="20" alt="" /> | **[github-actions-recipes](https://github.com/HarnageaGabriel/github-actions-recipes)** | I workflow dietro ai miei post su CI/CD e FinOps, una variabile isolata per ricetta | `GitHub Actions` | `live` |
-| <img src="https://skillicons.dev/icons?i=powershell&theme=dark" width="20" alt="" /> | **[token-optimization](https://github.com/HarnageaGabriel/token-optimization)** | Riduce il consumo di token quando lavori con agenti LLM. Rieseguire il setup non cambia nulla | `PowerShell` | `live` |
-
-`kubectl-safe-rollout` è [in submission su krew-index](https://github.com/kubernetes-sigs/krew-index/pull/6213), quindi sarà installabile con `kubectl krew install safe-rollout`.
-
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
-
-## `▸` Scrivo
-
-Su LinkedIn scrivo dei dettagli di piattaforma che di solito nessuno verifica: come Azure DevOps risolve le sue tre sintassi di espressione, le regole di conformità per i runner self-hosted, cosa decide e cosa non decide la code review di Copilot, e se lo sconto di una reservation Azure si sta ancora applicando a qualcosa.
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://img.shields.io/badge/Leggi%20su%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="" /></a>
-
-</div>
 
 <div align="center">
 

@@ -83,14 +83,24 @@ REWRITES = {
 
 
 def fetch_pull_requests():
+    """Return the pull requests, plus the totals the intro line and badges use.
+
+    The totals cover every pull request the search returns, including the
+    closed ones that never merged and are therefore listed nowhere below.
+    """
+    # -user: keeps PRs on my own repos out of the 100-item page.
     out = subprocess.check_output([
         "gh", "api", "-X", "GET", "search/issues",
-        "-f", "q=author:%s type:pr" % USER, "-f", "per_page=100",
+        "-f", "q=author:%s type:pr -user:%s" % (USER, USER), "-f", "per_page=100",
         "--jq", '[.items[] | {repo:(.repository_url|split("/")|.[-2:]|join("/")), '
                 'number, state, merged:(.pull_request.merged_at!=null), title, url:.html_url}]',
     ], shell=(os.name == "nt"))
-    prs = json.loads(out.decode("utf-8"))
-    return [p for p in prs if not p["repo"].startswith(USER + "/")]
+    prs = [p for p in json.loads(out.decode("utf-8")) if not p["repo"].startswith(USER + "/")]
+    return prs, {
+        "pull_requests": len(prs),
+        "projects": len({p["repo"] for p in prs}),
+        "merged": len([p for p in prs if p["merged"]]),
+    }
 
 
 def describe(title):
@@ -121,6 +131,12 @@ def ordered(rows, preferred):
         preferred.index(p["repo"]) if p["repo"] in preferred else 99, p["repo"], -p["number"]))
 
 
+def shields(text, color, style="flat-square"):
+    """A shields.io badge carrying the dark label segment the header uses."""
+    return "https://img.shields.io/badge/%s-%s?style=%s&labelColor=0D1117" % (
+        text.replace("-", "--").replace(" ", "%20"), color, style)
+
+
 EN = {
     "lang": "en",
     "location": "TURIN, ITALY",
@@ -131,8 +147,9 @@ EN = {
 
 I wrote application code before I ran the infrastructure that hosts it, which pays off mostly when a build breaks and someone has to know where to look.
 
-The open-source work here comes from the same place. Something misbehaves in a real deployment, I go read the source, and the fix goes upstream rather than into a patch I keep to myself.""",
+The open-source work here comes from the same place. Most of it is small, read-only, deterministic tools for problems I hit in real deployments, and when the bug is in someone else's code the fix goes upstream rather than into a patch I keep for myself.""",
     "yaml": """role:      DevOps & Platform Engineer
+building:  [trasloco, kubectl-safe-rollout, scadenza, disdetta]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 also:      [FinOps, Agentic DevOps, .NET backend]
 languages: [C#, TypeScript, Go, Rust, Python, Bash, PowerShell]
@@ -154,20 +171,29 @@ based_in:  Turin, Italy""",
         ("Backend &amp; architecture", "REST/HTTP APIs in .NET 8/9 · Worker Services · CQRS with MediatR · Domain-Driven Design · hexagonal and N-tier architectures · API gateway with Ocelot · EF Core and Dapper · PostgreSQL, MongoDB · NUnit + Moq, self-hosted integration tests"),
         ("Identity, storage &amp; AI", "Keycloak with OAuth 2.0 · JWT bearer flows · SeaweedFS through the S3-compatible client · self-hosted LLM inference with Ollama · RAG pipelines with ChromaDB and embedding models · Copilot governance and AI spend controls"),
     ],
-    "upstream": "Upstream contributions",
+    "upstream": "Upstream fixes",
     "upstream_lead": "%d pull requests across %d projects I run or depend on. %d merged so far, %d still in review.",
     "merged": "Merged",
+    "merged_count": "(%d merged pull requests)",
     "in_review": "In review",
     "in_review_count": "(%d open pull requests)",
     "headers": ("Project", "Change", "PR"),
     "all_prs": "See all pull requests",
     "projects": "Projects",
-    "projects_headers": "| | Project | What it is | Stack | |\n|:-:|---|---|---|:-:|",
+    "featured_name": "trasloco",
+    "featured_url": "https://github.com/HarnageaGabriel/trasloco",
+    "featured_lead": "An open-source tool, in the making, to move CI/CD pipelines between Azure DevOps, GitHub and more. Predictable and reviewable by design: plan/apply, deterministic.",
+    "featured_body": "Already usable today to find retired Azure Pipelines tasks, as shown in its [Try it now](https://github.com/HarnageaGabriel/trasloco#try-it-now-find-retired-azure-pipelines-tasks) section. The companion repo [trasloco-e2e](https://github.com/HarnageaGabriel/trasloco-e2e) runs the generated pipelines on real runners.",
+    "featured_badges": [shields("pre-alpha", "9E6A03", "for-the-badge"), shields("Apache-2.0", "1F6FEB", "for-the-badge"), shields("Go", "00ADD8", "for-the-badge")],
+    "projects_headers": "| | Project | What it is | Stack | Status |\n|:-:|---|---|---|:-:|",
     "projects_rows": [
-        ("kubectl-safe-rollout", "A kubectl plugin that tells you why a rollout failed or stalled. Deterministic classification, no LLM, and it never writes to the cluster", "`Go` `client-go`", "`v0.3.0`"),
-        ("github-actions-recipes", "The workflows behind my CI/CD and FinOps posts, one variable isolated per recipe", "`GitHub Actions`", "`live`"),
-        ("token-optimization", "Cuts token usage when working with LLM coding agents. Re-running the setup is a no-op", "`PowerShell`", "`live`"),
+        ("go", "kubectl-safe-rollout", "A kubectl plugin that explains why a rollout failed or stalled: deterministic classification, no LLM, and it never writes to the cluster", "`Go` `client-go`", shields("v0.3.0", "1F6FEB")),
+        ("go", "scadenza", "Which public TLS certificates will not survive 100-day lifetimes. It merges Certificate Transparency logs, live TLS handshakes, Kubernetes/cert-manager and Azure Key Vault into one inventory: where each certificate lives, who renews it, and whether renewal is automatic. Read-only", "`Go`", shields("pre-alpha", "9E6A03")),
+        ("go", "disdetta", "Finds Bitnami dependencies (bitnamilegacy images, since 2025-08-28) in repositories, clusters and GitOps repos, then plans the exit per component. Read-only, deterministic, no telemetry", "`Go`", shields("pre-alpha", "9E6A03")),
+        ("githubactions", "github-actions-recipes", "The workflows behind my CI/CD and FinOps posts, one variable isolated per recipe", "`GitHub Actions`", shields("live", "238636")),
+        ("powershell", "token-optimization", "Idempotent bootstrap that cuts token usage when working with LLM coding agents", "`PowerShell`", shields("live", "238636")),
     ],
+    "principles": "The Go tools here share one shape: single binary, read-only by default, deterministic, no telemetry, Apache-2.0.",
     "krew_note": "`kubectl-safe-rollout` is [submitted to krew-index](https://github.com/kubernetes-sigs/krew-index/pull/6213), so it will be installable with `kubectl krew install safe-rollout`.",
     "writing": "Writing",
     "writing_body": "I write on LinkedIn about platform details that usually pass unchecked: how Azure DevOps resolves its three expression syntaxes, the compliance rules for self-hosted runners, what Copilot code review does and does not decide, and whether an Azure reservation discount is still applying to anything.",
@@ -189,8 +215,9 @@ IT = {
 
 Ho scritto codice applicativo prima di gestire l'infrastruttura che lo ospita, e questo serve soprattutto quando una build si rompe e qualcuno deve sapere dove guardare.
 
-Il lavoro open source qui sopra nasce allo stesso modo. Qualcosa si comporta male in un deployment reale, vado a leggere il sorgente, e la correzione finisce upstream invece che in una patch che tengo per me.""",
+Il lavoro open source qui sopra nasce allo stesso modo: per lo più strumenti piccoli, read-only e deterministici, per problemi che incontro in deployment reali, e quando il bug è nel codice di qualcun altro la correzione finisce upstream invece che in una patch che tengo per me.""",
     "yaml": """ruolo:     DevOps & Platform Engineer
+progetti:  [trasloco, kubectl-safe-rollout, scadenza, disdetta]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 anche:     [FinOps, Agentic DevOps, backend .NET]
 linguaggi: [C#, TypeScript, Go, Rust, Python, Bash, PowerShell]
@@ -212,20 +239,29 @@ dove:      Torino, Italia""",
         ("Backend e architettura", "API REST/HTTP in .NET 8/9 · Worker Service · CQRS con MediatR · Domain-Driven Design · architetture esagonali e N-tier · API gateway con Ocelot · EF Core e Dapper · PostgreSQL, MongoDB · NUnit + Moq, integration test self-hosted"),
         ("Identity, storage e AI", "Keycloak con OAuth 2.0 · flussi JWT bearer · SeaweedFS tramite client compatibile S3 · inferenza LLM self-hosted con Ollama · pipeline RAG con ChromaDB e modelli di embedding · governance di Copilot e controllo della spesa AI"),
     ],
-    "upstream": "Contributi upstream",
+    "upstream": "Correzioni upstream",
     "upstream_lead": "%d pull request su %d progetti che uso o da cui dipendo. %d già mergiate, %d ancora in review.",
     "merged": "Mergiate",
+    "merged_count": "(%d pull request mergiate)",
     "in_review": "In review",
     "in_review_count": "(%d pull request aperte)",
     "headers": ("Progetto", "Modifica", "PR"),
     "all_prs": "Tutte le pull request",
     "projects": "Progetti",
-    "projects_headers": "| | Progetto | Cos'è | Stack | |\n|:-:|---|---|---|:-:|",
+    "featured_name": "trasloco",
+    "featured_url": "https://github.com/HarnageaGabriel/trasloco",
+    "featured_lead": "Uno strumento open source, in lavorazione, per spostare pipeline CI/CD tra Azure DevOps, GitHub e altro. Prevedibile e revisionabile per design: plan/apply, deterministico.",
+    "featured_body": "Già usabile oggi per trovare i task Azure Pipelines dismessi, come mostra la sua sezione [Try it now](https://github.com/HarnageaGabriel/trasloco#try-it-now-find-retired-azure-pipelines-tasks). Il repo companion [trasloco-e2e](https://github.com/HarnageaGabriel/trasloco-e2e) esegue le pipeline generate su runner reali.",
+    "featured_badges": [shields("pre-alpha", "9E6A03", "for-the-badge"), shields("Apache-2.0", "1F6FEB", "for-the-badge"), shields("Go", "00ADD8", "for-the-badge")],
+    "projects_headers": "| | Progetto | Cos'è | Stack | Stato |\n|:-:|---|---|---|:-:|",
     "projects_rows": [
-        ("kubectl-safe-rollout", "Plugin kubectl che spiega perché un rollout è fallito o si è bloccato. Classificazione deterministica, nessun LLM, e non scrive mai sul cluster", "`Go` `client-go`", "`v0.3.0`"),
-        ("github-actions-recipes", "I workflow dietro ai miei post su CI/CD e FinOps, una variabile isolata per ricetta", "`GitHub Actions`", "`live`"),
-        ("token-optimization", "Riduce il consumo di token quando lavori con agenti LLM. Rieseguire il setup non cambia nulla", "`PowerShell`", "`live`"),
+        ("go", "kubectl-safe-rollout", "Plugin kubectl che spiega perché un rollout è fallito o si è bloccato: classificazione deterministica, nessun LLM, e non scrive mai sul cluster", "`Go` `client-go`", shields("v0.3.0", "1F6FEB")),
+        ("go", "scadenza", "Quali certificati TLS pubblici non sopravviveranno a lifetime da 100 giorni. Unisce i log di Certificate Transparency, gli handshake TLS reali, Kubernetes/cert-manager e Azure Key Vault in un unico inventario: dove vive ogni certificato, chi lo rinnova e se il rinnovo è automatico. Read-only", "`Go`", shields("pre-alpha", "9E6A03")),
+        ("go", "disdetta", "Trova le dipendenze Bitnami (immagini bitnamilegacy, dal 2025-08-28) in repository, cluster e repo GitOps, e pianifica l'uscita componente per componente. Read-only, deterministico, nessuna telemetria", "`Go`", shields("pre-alpha", "9E6A03")),
+        ("githubactions", "github-actions-recipes", "I workflow dietro ai miei post su CI/CD e FinOps, una variabile isolata per ricetta", "`GitHub Actions`", shields("live", "238636")),
+        ("powershell", "token-optimization", "Bootstrap idempotente che riduce il consumo di token quando lavori con agenti LLM", "`PowerShell`", shields("live", "238636")),
     ],
+    "principles": "Gli strumenti Go qui condividono la stessa forma: binario singolo, read-only di default, deterministici, nessuna telemetria, Apache-2.0.",
     "krew_note": "`kubectl-safe-rollout` è [in submission su krew-index](https://github.com/kubernetes-sigs/krew-index/pull/6213), quindi sarà installabile con `kubectl krew install safe-rollout`.",
     "writing": "Scrivo",
     "writing_body": "Su LinkedIn scrivo dei dettagli di piattaforma che di solito nessuno verifica: come Azure DevOps risolve le sue tre sintassi di espressione, le regole di conformità per i runner self-hosted, cosa decide e cosa non decide la code review di Copilot, e se lo sconto di una reservation Azure si sta ancora applicando a qualcosa.",
@@ -238,10 +274,9 @@ dove:      Torino, Italia""",
 }
 
 
-def render(t, prs, typing_lines):
+def render(t, prs, totals, typing_lines):
     merged = ordered([p for p in prs if p["merged"]], MERGED_ORDER)
     openpr = ordered([p for p in prs if p["state"] == "open"], OPEN_ORDER)
-    projects = len({p["repo"] for p in prs})
     div = '<img src="%s/assets/divider.svg" width="100%%" alt="" />' % RAW
 
     o = []
@@ -263,6 +298,20 @@ def render(t, prs, typing_lines):
     o.append("## `▸` " + t["about"] + "\n")
     o.append(t["about_body"] + "\n")
     o.append("```yaml\n" + t["yaml"] + "\n```\n")
+    o.append(div + "\n")
+
+    o.append("## `▸` " + t["projects"] + "\n")
+    o.append("### [%s](%s)\n" % (t["featured_name"], t["featured_url"]))
+    o.append(t["featured_lead"] + "\n")
+    o.append(t["featured_body"] + "\n")
+    o.append(" ".join('<img src="%s" alt="" />' % b for b in t["featured_badges"]) + "\n")
+    o.append(t["projects_headers"])
+    for icon, name, what, stack, status in t["projects_rows"]:
+        o.append('| <img src="https://skillicons.dev/icons?i=%s&theme=dark" width="20" alt="" /> | **[%s](https://github.com/%s/%s)** | %s | %s | <img src="%s" alt="" /> |' % (
+            icon, name, USER, name, what, stack, status))
+    o.append("")
+    o.append(t["principles"] + "\n")
+    o.append(t["krew_note"] + "\n")
     o.append(div + "\n")
 
     o.append("## `▸` " + t["what"] + "\n")
@@ -288,10 +337,19 @@ def render(t, prs, typing_lines):
     o.append("</table>\n")
     o.append(div + "\n")
 
+    o.append("## `▸` " + t["writing"] + "\n")
+    o.append(t["writing_body"] + "\n")
+    o.append('<div align="center">\n')
+    o.append('<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://img.shields.io/badge/%s-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="" /></a>\n' % t["read_linkedin"].replace(" ", "%20"))
+    o.append('</div>\n')
+    o.append(div + "\n")
+
     o.append("## `▸` " + t["upstream"] + "\n")
-    o.append(t["upstream_lead"] % (len(prs), projects, len(merged), len(openpr)) + "\n")
-    o.append("**" + t["merged"] + "**\n")
+    o.append(t["upstream_lead"] % (totals["pull_requests"], totals["projects"], len(merged), len(openpr)) + "\n")
+    o.append("<details>")
+    o.append("<summary><b>%s</b> %s</summary>\n" % (t["merged"], t["merged_count"] % len(merged)))
     o.append(table(merged, t["headers"]) + "\n")
+    o.append("</details>\n")
     o.append("<details>")
     o.append("<summary><b>%s</b> %s</summary>\n" % (t["in_review"], t["in_review_count"] % len(openpr)))
     o.append(table(openpr, t["headers"]) + "\n")
@@ -300,22 +358,6 @@ def render(t, prs, typing_lines):
     o.append('<a href="https://github.com/pulls?q=is%%3Apr+author%%3A%s"><img src="https://img.shields.io/badge/%s-1F6FEB?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="" /></a>\n' % (USER, t["all_prs"].replace(" ", "%20")))
     o.append('</div>\n')
     o.append(div + "\n")
-
-    o.append("## `▸` " + t["projects"] + "\n")
-    o.append(t["projects_headers"])
-    for name, what, stack, status in t["projects_rows"]:
-        o.append("| <img src=\"https://skillicons.dev/icons?i=%s&theme=dark\" width=\"20\" alt=\"\" /> | **[%s](https://github.com/%s/%s)** | %s | %s | %s |" % (
-            {"kubectl-safe-rollout": "go", "github-actions-recipes": "githubactions",
-             "token-optimization": "powershell"}[name], name, USER, name, what, stack, status))
-    o.append("")
-    o.append(t["krew_note"] + "\n")
-    o.append(div + "\n")
-
-    o.append("## `▸` " + t["writing"] + "\n")
-    o.append(t["writing_body"] + "\n")
-    o.append('<div align="center">\n')
-    o.append('<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://img.shields.io/badge/%s-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D1117" alt="" /></a>\n' % t["read_linkedin"].replace(" ", "%20"))
-    o.append('</div>\n')
 
     o.append('<div align="center">\n')
     o.append('<img src="%s/assets/footer.svg?v=2" width="100%%" alt="" />\n' % RAW)
@@ -329,23 +371,23 @@ def render(t, prs, typing_lines):
 
 
 TYPING_EN = ("DevOps+%26+Platform+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;"
-             "FinOps+and+agentic+DevOps;Upstream+PRs+in+Kubernetes%2C+Docker%2C+.NET%2C+containerd")
+             "FinOps+and+agentic+DevOps;Building+OSS+tools%3A+pipeline+migration%2C+rollouts%2C+TLS+certs")
 TYPING_IT = ("DevOps+%26+Platform+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;"
-             "FinOps+e+agentic+DevOps;PR+upstream+su+Kubernetes%2C+Docker%2C+.NET%2C+containerd")
+             "FinOps+e+agentic+DevOps;Strumenti+OSS%3A+migrazione+pipeline%2C+rollout%2C+certificati+TLS")
 
 
 def main():
-    prs = fetch_pull_requests()
+    prs, totals = fetch_pull_requests()
     written = badges.write_all(
         ROOT, EN, IT,
-        merged_count=len([p for p in prs if p["merged"]]),
-        project_count=len({p["repo"] for p in prs}),
+        merged_count=totals["merged"],
+        project_count=totals["projects"],
         plugin_version=PLUGIN_VERSION,
     )
     print("wrote %d badge assets" % len(written))
     for name, strings, typing in (("README.md", EN, TYPING_EN), ("README.it.md", IT, TYPING_IT)):
         path = os.path.join(ROOT, name)
-        io.open(path, "w", encoding="utf-8", newline="\n").write(render(strings, prs, typing))
+        io.open(path, "w", encoding="utf-8", newline="\n").write(render(strings, prs, totals, typing))
         print("wrote %s" % name)
     return 0
 
