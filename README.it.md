@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=5" width="100%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=6" width="100%" alt="Gabriel Harnagea, Cloud and DevOps Engineer" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;FinOps+e+agentic+DevOps;Cutover+ingress%2C+TLS+100+giorni%2C+uscita+Bitnami%2C+pipeline" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=Cloud+%26+DevOps+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;FinOps+e+agentic+DevOps;Cutover+ingress%2C+TLS+100+giorni%2C+uscita+Bitnami%2C+pipeline" alt="" />
 
 <br/>
 
@@ -22,14 +22,14 @@
 
 ## `▸` Chi sono
 
-Sono un DevOps & Platform Engineer su progetti enterprise: CI/CD, Kubernetes, Terraform, costi cloud.
+Sono un Cloud & DevOps Engineer su progetti enterprise: CI/CD, Kubernetes, Terraform, costi cloud.
 
 Ho scritto codice applicativo prima di gestire l'infrastruttura che lo ospita, e questo serve soprattutto quando una build si rompe e qualcuno deve sapere dove guardare.
 
 Il lavoro open source qui sopra nasce allo stesso modo: per lo più strumenti piccoli, read-only e deterministici, per problemi che incontro in deployment reali, e quando il bug è nel codice di qualcun altro la correzione finisce upstream invece che in una patch che tengo per me.
 
 ```yaml
-ruolo:     DevOps & Platform Engineer
+ruolo:     Cloud & DevOps Engineer
 progetti:  [varco, scadenza, disdetta, trasloco, kubectl-safe-rollout]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 anche:     [FinOps, Agentic DevOps, backend .NET]

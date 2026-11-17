@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=5" width="100%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=6" width="100%" alt="Gabriel Harnagea, Cloud and DevOps Engineer" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+and+agentic+DevOps;Ingress+cutovers%2C+100-day+TLS%2C+Bitnami+exit%2C+pipelines" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=Cloud+%26+DevOps+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+and+agentic+DevOps;Ingress+cutovers%2C+100-day+TLS%2C+Bitnami+exit%2C+pipelines" alt="" />
 
 <br/>
 
@@ -22,14 +22,14 @@
 
 ## `▸` About
 
-I'm a DevOps & Platform Engineer on enterprise projects: CI/CD, Kubernetes, Terraform, cloud cost.
+I'm a Cloud & DevOps Engineer on enterprise projects: CI/CD, Kubernetes, Terraform, cloud cost.
 
 I wrote application code before I ran the infrastructure that hosts it, which pays off mostly when a build breaks and someone has to know where to look.
 
 The open-source work here comes from the same place. Most of it is small, read-only, deterministic tools for problems I hit in real deployments, and when the bug is in someone else's code the fix goes upstream rather than into a patch I keep for myself.
 
 ```yaml
-role:      DevOps & Platform Engineer
+role:      Cloud & DevOps Engineer
 building:  [varco, scadenza, disdetta, trasloco, kubectl-safe-rollout]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 also:      [FinOps, Agentic DevOps, .NET backend]

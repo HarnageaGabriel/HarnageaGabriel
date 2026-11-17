@@ -169,12 +169,12 @@ EN = {
     "lang_note": ('<img src="%s/assets/lang-en-on.svg?v=5" alt="English" />'
                   '&nbsp;<a href="README.it.md"><img src="%s/assets/lang-it-off.svg?v=5" alt="Italiano" /></a>') % (RAW, RAW),
     "about": "About",
-    "about_body": """I'm a DevOps & Platform Engineer on enterprise projects: CI/CD, Kubernetes, Terraform, cloud cost.
+    "about_body": """I'm a Cloud & DevOps Engineer on enterprise projects: CI/CD, Kubernetes, Terraform, cloud cost.
 
 I wrote application code before I ran the infrastructure that hosts it, which pays off mostly when a build breaks and someone has to know where to look.
 
 The open-source work here comes from the same place. Most of it is small, read-only, deterministic tools for problems I hit in real deployments, and when the bug is in someone else's code the fix goes upstream rather than into a patch I keep for myself.""",
-    "yaml": """role:      DevOps & Platform Engineer
+    "yaml": """role:      Cloud & DevOps Engineer
 building:  [varco, scadenza, disdetta, trasloco, kubectl-safe-rollout]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 also:      [FinOps, Agentic DevOps, .NET backend]
@@ -223,12 +223,12 @@ IT = {
     "lang_note": ('<a href="README.md"><img src="%s/assets/lang-en-off.svg?v=5" alt="English" /></a>'
                   '&nbsp;<img src="%s/assets/lang-it-on.svg?v=5" alt="Italiano" />') % (RAW, RAW),
     "about": "Chi sono",
-    "about_body": """Sono un DevOps & Platform Engineer su progetti enterprise: CI/CD, Kubernetes, Terraform, costi cloud.
+    "about_body": """Sono un Cloud & DevOps Engineer su progetti enterprise: CI/CD, Kubernetes, Terraform, costi cloud.
 
 Ho scritto codice applicativo prima di gestire l'infrastruttura che lo ospita, e questo serve soprattutto quando una build si rompe e qualcuno deve sapere dove guardare.
 
 Il lavoro open source qui sopra nasce allo stesso modo: per lo più strumenti piccoli, read-only e deterministici, per problemi che incontro in deployment reali, e quando il bug è nel codice di qualcun altro la correzione finisce upstream invece che in una patch che tengo per me.""",
-    "yaml": """ruolo:     DevOps & Platform Engineer
+    "yaml": """ruolo:     Cloud & DevOps Engineer
 progetti:  [varco, scadenza, disdetta, trasloco, kubectl-safe-rollout]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 anche:     [FinOps, Agentic DevOps, backend .NET]
@@ -279,7 +279,7 @@ def render(t, prs, totals, typing_lines):
 
     o = []
     o.append('<div align="center">\n')
-    o.append('<img src="%s/assets/header.svg?v=5" width="100%%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />\n' % RAW)
+    o.append('<img src="%s/assets/header.svg?v=6" width="100%%" alt="Gabriel Harnagea, Cloud and DevOps Engineer" />\n' % RAW)
     o.append('<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=%s" alt="" />\n' % typing_lines)
     o.append('<br/>\n')
     o.append('<a href="%s/"><img src="%s/assets/pill-website.svg?v=6" alt="Website" /></a>'
@@ -370,9 +370,9 @@ def render(t, prs, totals, typing_lines):
     return "\n".join(o) + "\n"
 
 
-TYPING_EN = ("DevOps+%26+Platform+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;"
+TYPING_EN = ("Cloud+%26+DevOps+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;"
              "FinOps+and+agentic+DevOps;Ingress+cutovers%2C+100-day+TLS%2C+Bitnami+exit%2C+pipelines")
-TYPING_IT = ("DevOps+%26+Platform+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;"
+TYPING_IT = ("Cloud+%26+DevOps+Engineer;Pipeline+CI%2FCD%2C+Helm+chart%2C+Terraform%2C+GitOps;"
              "FinOps+e+agentic+DevOps;Cutover+ingress%2C+TLS+100+giorni%2C+uscita+Bitnami%2C+pipeline")
 
 
