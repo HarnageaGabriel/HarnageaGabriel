@@ -101,7 +101,15 @@ def icon_pin(ink):
     )
 
 
-ICONS = {"linkedin": icon_linkedin, "email": icon_email, "pin": icon_pin}
+def icon_globe(ink):
+    return (
+        '<circle cx="8" cy="8" r="6.6" fill="none" stroke="%s" stroke-width="1.5"/>'
+        '<ellipse cx="8" cy="8" rx="2.9" ry="6.6" fill="none" stroke="%s" stroke-width="1.3"/>'
+        '<path d="M1.6 8 H14.4" stroke="%s" stroke-width="1.3"/>' % (ink, ink, ink)
+    )
+
+
+ICONS = {"linkedin": icon_linkedin, "email": icon_email, "pin": icon_pin, "globe": icon_globe}
 
 FLAG_UK = (
     '<rect width="22" height="15" fill="#012169"/>'
@@ -296,6 +304,7 @@ def card(project, lang):
 
 def write_all(root, en, it, projects, merged_count, project_count):
     files = {
+        "pill-website.svg": pill("WEBSITE", "globe", filled=True),
         "pill-linkedin.svg": pill("LINKEDIN", "linkedin", filled=True),
         "pill-email.svg": pill("EMAIL", "email"),
         "pill-location-en.svg": pill(en["location"], "pin"),
