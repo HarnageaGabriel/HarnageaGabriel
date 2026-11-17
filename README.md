@@ -6,9 +6,7 @@
 
 <br/>
 
-<a href="https://personal-site.gabriel-harnagea06.workers.dev/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-website.svg?v=6" alt="Website" /></a>&nbsp;<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>&nbsp;<a href="https://personal-site.gabriel-harnagea06.workers.dev/contact/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-email.svg?v=5" alt="Email" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-location-en.svg?v=5" alt="TURIN, ITALY" />
-
-<sub><a href="https://personal-site.gabriel-harnagea06.workers.dev/">Home</a> &nbsp;·&nbsp; <a href="https://personal-site.gabriel-harnagea06.workers.dev/projects/">Projects</a> &nbsp;·&nbsp; <a href="https://personal-site.gabriel-harnagea06.workers.dev/about/">About</a> &nbsp;·&nbsp; <a href="https://personal-site.gabriel-harnagea06.workers.dev/cv/">CV</a> &nbsp;·&nbsp; <a href="https://personal-site.gabriel-harnagea06.workers.dev/contact/">Contact</a></sub>
+<a href="https://personal-site.gabriel-harnagea06.workers.dev/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-website.svg?v=6" alt="Website" /></a>&nbsp;<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>&nbsp;<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-email.svg?v=5" alt="Email" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-location-en.svg?v=5" alt="TURIN, ITALY" />
 
 <br/>
 
@@ -209,7 +207,7 @@ I write on LinkedIn about platform details that usually pass unchecked: how Azur
 
 <img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/footer.svg?v=5" width="100%" alt="" />
 
-<a href="https://personal-site.gabriel-harnagea06.workers.dev/contact/"><img src="https://img.shields.io/badge/Get%20in%20touch-1F6FEB?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0D1117" alt="" /></a>
+<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://img.shields.io/badge/Get%20in%20touch-1F6FEB?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0D1117" alt="" /></a>
 <a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>
 
 <br/>

@@ -23,7 +23,6 @@ import badges
 USER = "HarnageaGabriel"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = "https://raw.githubusercontent.com/%s/%s/main" % (USER, USER)
-# The site is English only, so the Italian README links the same pages.
 SITE = "https://personal-site.gabriel-harnagea06.workers.dev"
 
 # Rows without an entry render with an empty icon cell. Simple Icons dropped
@@ -212,7 +211,6 @@ based_in:  Turin, Italy""",
     "writing_body": "I write on LinkedIn about platform details that usually pass unchecked: how Azure DevOps resolves its three expression syntaxes, the compliance rules for self-hosted runners, what Copilot code review does and does not decide, and whether an Azure reservation discount is still applying to anything.",
     "read_linkedin": "Read on LinkedIn",
     "footer_cta": "Get in touch",
-    "site_nav": [("Home", ""), ("Projects", "projects/"), ("About", "about/"), ("CV", "cv/"), ("Contact", "contact/")],
     "badge_merged": "MERGED UPSTREAM",
     "badge_projects": "PROJECTS TOUCHED",
     "badge_own": "MY PROJECTS",
@@ -267,7 +265,6 @@ dove:      Torino, Italia""",
     "writing_body": "Su LinkedIn scrivo dei dettagli di piattaforma che di solito nessuno verifica: come Azure DevOps risolve le sue tre sintassi di espressione, le regole di conformità per i runner self-hosted, cosa decide e cosa non decide la code review di Copilot, e se lo sconto di una reservation Azure si sta ancora applicando a qualcosa.",
     "read_linkedin": "Leggi su LinkedIn",
     "footer_cta": "Scrivimi",
-    "site_nav": [("Home", ""), ("Progetti", "projects/"), ("Chi sono", "about/"), ("CV", "cv/"), ("Contatti", "contact/")],
     "badge_merged": "MERGIATE UPSTREAM",
     "badge_projects": "PROGETTI TOCCATI",
     "badge_own": "PROGETTI MIEI",
@@ -287,11 +284,9 @@ def render(t, prs, totals, typing_lines):
     o.append('<br/>\n')
     o.append('<a href="%s/"><img src="%s/assets/pill-website.svg?v=6" alt="Website" /></a>'
              '&nbsp;<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="%s/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>'
-             '&nbsp;<a href="%s/contact/"><img src="%s/assets/pill-email.svg?v=5" alt="Email" /></a>'
+             '&nbsp;<a href="mailto:gabriel.harnagea06@gmail.com"><img src="%s/assets/pill-email.svg?v=5" alt="Email" /></a>'
              '&nbsp;<img src="%s/assets/pill-location-%s.svg?v=5" alt="%s" />\n'
-             % (SITE, RAW, RAW, SITE, RAW, RAW, t["lang"], t["location"]))
-    o.append('<sub>' + ' &nbsp;·&nbsp; '.join('<a href="%s/%s">%s</a>' % (SITE, path, label)
-                                         for label, path in t["site_nav"]) + '</sub>\n')
+             % (SITE, RAW, RAW, RAW, RAW, t["lang"], t["location"]))
     o.append('<br/>\n')
     o.append('<img src="%s/assets/stats-%s.svg?v=5" alt="" />\n' % (RAW, t["lang"]))
     o.append('<br/>\n')
@@ -366,7 +361,7 @@ def render(t, prs, totals, typing_lines):
 
     o.append('<div align="center">\n')
     o.append('<img src="%s/assets/footer.svg?v=5" width="100%%" alt="" />\n' % RAW)
-    o.append('<a href="%s/contact/"><img src="https://img.shields.io/badge/%s-1F6FEB?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0D1117" alt="" /></a>' % (SITE, t["footer_cta"].replace(" ", "%20")))
+    o.append('<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://img.shields.io/badge/%s-1F6FEB?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0D1117" alt="" /></a>' % t["footer_cta"].replace(" ", "%20"))
     o.append('<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="%s/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>\n' % RAW)
     o.append('<br/>\n')
     o.append('<sub><img src="https://komarev.com/ghpvc/?username=%s&style=flat-square&color=1F6FEB&labelColor=10161F&label=%s" alt="" /></sub>\n' % (USER, t["views"].replace(" ", "+")))
