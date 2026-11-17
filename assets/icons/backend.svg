@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Backend">
+  <defs>
+    <style>
+      @keyframes bbframe { 0%, 100% { stroke-opacity: 0.35; } 50% { stroke-opacity: 0.9; } }
+      @keyframes bbglyph { 0%, 100% { stroke: #58A6FF; } 50% { stroke: #39D0D8; } }
+      @keyframes bbglow { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.7; } }
+      .bbf { animation: bbframe 3s ease-in-out infinite 1.5s; }
+      .bbg { animation: bbglyph 3s ease-in-out infinite 1.5s; }
+      .bbl { animation: bbglow 3s ease-in-out infinite 1.5s; }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+    <radialGradient id="bbglowg" cx="0.5" cy="0.45" r="0.65">
+      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#10161F"/>
+  <rect class="bbl" x="2" y="2" width="60" height="60" rx="14" fill="url(#bbglowg)" opacity="0.5"/>
+  <rect class="bbf" x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#1F6FEB" stroke-width="1.5" stroke-opacity="0.6"/>
+  <g class="bbg" fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 20 L10 32 L20 44"/>
+    <path d="M44 20 L54 32 L44 44"/>
+    <path d="M36 16 L28 48"/>
+  </g>
+</svg>

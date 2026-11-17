@@ -1,24 +1,24 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=2" width="100%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/header.svg?v=5" width="100%" alt="Gabriel Harnagea, DevOps and Platform Engineer" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+and+agentic+DevOps;Building+OSS+tools%3A+pipeline+migration%2C+rollouts%2C+TLS+certs" alt="" />
-
-<br/>
-
-<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=3" alt="LinkedIn" /></a>&nbsp;<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-email.svg?v=3" alt="Email" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-location-en.svg?v=3" alt="TURIN, ITALY" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=DevOps+%26+Platform+Engineer;CI%2FCD+pipelines%2C+Helm+charts%2C+Terraform%2C+GitOps;FinOps+and+agentic+DevOps;Ingress+cutovers%2C+100-day+TLS%2C+Bitnami+exit%2C+pipelines" alt="" />
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/stats-en.svg?v=4" alt="" />
+<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>&nbsp;<a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-email.svg?v=5" alt="Email" /></a>&nbsp;<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-location-en.svg?v=5" alt="TURIN, ITALY" />
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-en-on.svg?v=3" alt="English" />&nbsp;<a href="README.it.md"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-it-off.svg?v=3" alt="Italiano" /></a>
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/stats-en.svg?v=5" alt="" />
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-en-on.svg?v=5" alt="English" />&nbsp;<a href="README.it.md"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/lang-it-off.svg?v=5" alt="Italiano" /></a>
 
 </div>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 ## `▸` About
 
@@ -30,7 +30,7 @@ The open-source work here comes from the same place. Most of it is small, read-o
 
 ```yaml
 role:      DevOps & Platform Engineer
-building:  [trasloco, kubectl-safe-rollout, scadenza, disdetta]
+building:  [varco, scadenza, disdetta, trasloco, kubectl-safe-rollout]
 platform:  [Azure, Kubernetes, GitOps, Terraform, Azure DevOps, GitHub Actions]
 also:      [FinOps, Agentic DevOps, .NET backend]
 languages: [C#, TypeScript, Go, Rust, Python, Bash, PowerShell]
@@ -38,46 +38,48 @@ into:      [correctness bugs, observability gaps, release plumbing, cloud cost]
 based_in:  Turin, Italy
 ```
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 ## `▸` Projects
 
-### [trasloco](https://github.com/HarnageaGabriel/trasloco)
+<table>
+<tr>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/varco"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/varco-en.svg?v=5" width="100%" alt="varco" /></a></td>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/scadenza"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/scadenza-en.svg?v=5" width="100%" alt="scadenza" /></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/disdetta"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/disdetta-en.svg?v=5" width="100%" alt="disdetta" /></a></td>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/trasloco"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/trasloco-en.svg?v=5" width="100%" alt="trasloco" /></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/kubectl-safe-rollout"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/kubectl-safe-rollout-en.svg?v=5" width="100%" alt="kubectl-safe-rollout" /></a></td>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/github-actions-recipes"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/github-actions-recipes-en.svg?v=5" width="100%" alt="github-actions-recipes" /></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/HarnageaGabriel/token-optimization"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/cards/token-optimization-en.svg?v=5" width="100%" alt="token-optimization" /></a></td>
+</tr>
+</table>
 
-An open-source tool, in the making, to move CI/CD pipelines between Azure DevOps, GitHub and more. Predictable and reviewable by design: plan/apply, deterministic.
-
-Already usable today to find retired Azure Pipelines tasks, as shown in its [Try it now](https://github.com/HarnageaGabriel/trasloco#try-it-now-find-retired-azure-pipelines-tasks) section. The companion repo [trasloco-e2e](https://github.com/HarnageaGabriel/trasloco-e2e) runs the generated pipelines on real runners.
-
-<img src="https://img.shields.io/badge/pre--alpha-9E6A03?style=for-the-badge&labelColor=0D1117" alt="" /> <img src="https://img.shields.io/badge/Apache--2.0-1F6FEB?style=for-the-badge&labelColor=0D1117" alt="" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&labelColor=0D1117" alt="" />
-
-| | Project | What it is | Stack | Status |
-|:-:|---|---|---|:-:|
-| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[kubectl-safe-rollout](https://github.com/HarnageaGabriel/kubectl-safe-rollout)** | A kubectl plugin that explains why a rollout failed or stalled: deterministic classification, no LLM, and it never writes to the cluster | `Go` `client-go` | <img src="https://img.shields.io/badge/v0.3.0-1F6FEB?style=flat-square&labelColor=0D1117" alt="" /> |
-| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[scadenza](https://github.com/HarnageaGabriel/scadenza)** | Which public TLS certificates will not survive 100-day lifetimes. It merges Certificate Transparency logs, live TLS handshakes, Kubernetes/cert-manager and Azure Key Vault into one inventory: where each certificate lives, who renews it, and whether renewal is automatic. Read-only | `Go` | <img src="https://img.shields.io/badge/pre--alpha-9E6A03?style=flat-square&labelColor=0D1117" alt="" /> |
-| <img src="https://skillicons.dev/icons?i=go&theme=dark" width="20" alt="" /> | **[disdetta](https://github.com/HarnageaGabriel/disdetta)** | Finds Bitnami dependencies (bitnamilegacy images, since 2025-08-28) in repositories, clusters and GitOps repos, then plans the exit per component. Read-only, deterministic, no telemetry | `Go` | <img src="https://img.shields.io/badge/pre--alpha-9E6A03?style=flat-square&labelColor=0D1117" alt="" /> |
-| <img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="20" alt="" /> | **[github-actions-recipes](https://github.com/HarnageaGabriel/github-actions-recipes)** | The workflows behind my CI/CD and FinOps posts, one variable isolated per recipe | `GitHub Actions` | <img src="https://img.shields.io/badge/live-238636?style=flat-square&labelColor=0D1117" alt="" /> |
-| <img src="https://skillicons.dev/icons?i=powershell&theme=dark" width="20" alt="" /> | **[token-optimization](https://github.com/HarnageaGabriel/token-optimization)** | Idempotent bootstrap that cuts token usage when working with LLM coding agents | `PowerShell` | <img src="https://img.shields.io/badge/live-238636?style=flat-square&labelColor=0D1117" alt="" /> |
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/principles.svg?v=5" width="100%" alt="" />
 
 The Go tools here share one shape: single binary, read-only by default, deterministic, no telemetry, Apache-2.0.
 
-`kubectl-safe-rollout` is [submitted to krew-index](https://github.com/kubernetes-sigs/krew-index/pull/6213), so it will be installable with `kubectl krew install safe-rollout`.
-
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 ## `▸` What I do
 
 <table>
 <tr>
-<td align="center" width="16.6%"><img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="40" alt="" /><br/><b>Pipelines</b><br/><sub>Azure DevOps · GitHub Actions · templates</sub></td>
-<td align="center" width="16.6%"><img src="https://skillicons.dev/icons?i=kubernetes&theme=dark" width="40" alt="" /><br/><b>Kubernetes</b><br/><sub>AKS · k3d · Helm · Helmfile</sub></td>
-<td align="center" width="16.6%"><img src="https://skillicons.dev/icons?i=terraform&theme=dark" width="40" alt="" /><br/><b>Infrastructure</b><br/><sub>Terraform · scale sets · golden images</sub></td>
-<td align="center" width="16.6%"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="40" alt="" /><br/><b>Containers</b><br/><sub>Docker · Helm charts · OCI on ACR/GHCR</sub></td>
-<td align="center" width="16.6%"><img src="https://skillicons.dev/icons?i=azure&theme=dark" width="40" alt="" /><br/><b>Cloud &amp; cost</b><br/><sub>Azure · reservations · FinOps</sub></td>
-<td align="center" width="16.6%"><img src="https://skillicons.dev/icons?i=dotnet&theme=dark" width="40" alt="" /><br/><b>Backend</b><br/><sub>.NET 8/9 · CQRS · DDD</sub></td>
+<td align="center" width="16.6%"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/icons/pipelines.svg?v=5" width="48" alt="" /><br/><b>Pipelines</b><br/><sub>Azure DevOps · GitHub Actions · templates</sub></td>
+<td align="center" width="16.6%"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/icons/kubernetes.svg?v=5" width="48" alt="" /><br/><b>Kubernetes</b><br/><sub>AKS · k3d · Helm · Helmfile</sub></td>
+<td align="center" width="16.6%"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/icons/infrastructure.svg?v=5" width="48" alt="" /><br/><b>Infrastructure</b><br/><sub>Terraform · scale sets · golden images</sub></td>
+<td align="center" width="16.6%"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/icons/containers.svg?v=5" width="48" alt="" /><br/><b>Containers</b><br/><sub>Docker · Helm charts · OCI on ACR/GHCR</sub></td>
+<td align="center" width="16.6%"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/icons/cloud-cost.svg?v=5" width="48" alt="" /><br/><b>Cloud &amp; cost</b><br/><sub>Azure · reservations · FinOps</sub></td>
+<td align="center" width="16.6%"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/icons/backend.svg?v=5" width="48" alt="" /><br/><b>Backend</b><br/><sub>.NET 8/9 · CQRS · DDD</sub></td>
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 ## `▸` Stack
 
@@ -118,7 +120,7 @@ Keycloak with OAuth 2.0 · JWT bearer flows · SeaweedFS through the S3-compatib
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 ## `▸` Writing
 
@@ -130,11 +132,11 @@ I write on LinkedIn about platform details that usually pass unchecked: how Azur
 
 </div>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 ## `▸` Upstream fixes
 
-53 pull requests across 42 projects I run or depend on. 13 merged so far, 30 still in review.
+53 pull requests across 42 projects I run or depend on. 13 merged so far, 28 still in review.
 
 <details>
 <summary><b>Merged</b> (13 merged pull requests)</summary>
@@ -143,9 +145,9 @@ I write on LinkedIn about platform details that usually pass unchecked: how Azur
 |:-:|---|---|:-:|
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **dotnet/runtime** | Fix CompareInfo.IsPrefix/IsSuffix with CompareOptions.IgnoreSymbols not ignoring leading/trailing symbols | [`#132397`](https://github.com/dotnet/runtime/pull/132397) |
 | <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes-sigs/apiserver-network-proxy** | Add connection_duration_seconds histogram for post-dial connection lifespan | [`#899`](https://github.com/kubernetes-sigs/apiserver-network-proxy/pull/899) |
-| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Fix Sentinel connection leak and AbortOnConnectFail=false handling | [`#3187`](https://github.com/StackExchange/StackExchange.Redis/pull/3187) |
-| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Add NOMKSTREAM support to XADD | [`#3186`](https://github.com/StackExchange/StackExchange.Redis/pull/3186) |
-| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **StackExchange/StackExchange.Redis** | Make fallback discovery and keep-alive probes cluster-slot aware | [`#3185`](https://github.com/StackExchange/StackExchange.Redis/pull/3185) |
+| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **seredis/StackExchange.Redis** | Fix Sentinel connection leak and AbortOnConnectFail=false handling | [`#3187`](https://github.com/seredis/StackExchange.Redis/pull/3187) |
+| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **seredis/StackExchange.Redis** | Add NOMKSTREAM support to XADD | [`#3186`](https://github.com/seredis/StackExchange.Redis/pull/3186) |
+| <img src="https://cdn.simpleicons.org/redis/FF4438" width="18"/> | **seredis/StackExchange.Redis** | Make fallback discovery and keep-alive probes cluster-slot aware | [`#3185`](https://github.com/seredis/StackExchange.Redis/pull/3185) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **DapperLib/DapperAOT** | Fix false-positive DAP214 for {=XXX} literal-replacement syntax | [`#191`](https://github.com/DapperLib/DapperAOT/pull/191) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nunit/nunit-console** | Add AssemblyTargetFramework to IExtensionNode | [`#1867`](https://github.com/nunit/nunit-console/pull/1867) |
 | <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="18"/> | **nunit/nunit-console** | Fix --list-extensions showing wrong target framework for extensions | [`#1861`](https://github.com/nunit/nunit-console/pull/1861) |
@@ -158,19 +160,17 @@ I write on LinkedIn about platform details that usually pass unchecked: how Azur
 </details>
 
 <details>
-<summary><b>In review</b> (30 open pull requests)</summary>
+<summary><b>In review</b> (28 open pull requests)</summary>
 
 | | Project | Change | PR |
 |:-:|---|---|:-:|
 | <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **moby/moby** | Bridge: repair stale WSL2Mirrored loopback0 drop rules | [`#53458`](https://github.com/moby/moby/pull/53458) |
 | <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes/kube-openapi** | Fix duplicate map keys when a type embeds two structs sharing a field | [`#631`](https://github.com/kubernetes/kube-openapi/pull/631) |
-| <img src="https://cdn.simpleicons.org/kubernetes/326CE5" width="18"/> | **kubernetes/perf-tests** | Add unit tests for clusterloader2/pkg/errors | [`#4261`](https://github.com/kubernetes/perf-tests/pull/4261) |
 | <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **docker/cli** | Cli/command/image: trim iidfile image ID and fail clearly when missing | [`#7279`](https://github.com/docker/cli/pull/7279) |
 | <img src="https://cdn.simpleicons.org/docker/2496ED" width="18"/> | **docker/cli** | Normalize the registry server address to lowercase for credential lookup | [`#7184`](https://github.com/docker/cli/pull/7184) |
 | <img src="https://cdn.simpleicons.org/containerd/575757" width="18"/> | **containerd/runwasi** | Gate ctr image import --local by detected ctr version | [`#1177`](https://github.com/containerd/runwasi/pull/1177) |
 | <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-cd** | Add ignoreDraft filter to ApplicationSet Pull Request generator | [`#29265`](https://github.com/argoproj/argo-cd/pull/29265) |
 | <img src="https://cdn.simpleicons.org/argo/EF7B4D" width="18"/> | **argoproj/argo-rollouts** | Stop degraded stable RS from permanently blocking subset DestinationRule switch | [`#4990`](https://github.com/argoproj/argo-rollouts/pull/4990) |
-| <img src="https://cdn.simpleicons.org/cncf/231F20" width="18"/> | **open-policy-agent/opa** | Make allow_net restrict file:// refs in JSON schemas | [`#9044`](https://github.com/open-policy-agent/opa/pull/9044) |
 | <img src="https://cdn.simpleicons.org/cncf/231F20" width="18"/> | **spiffe/spire** | Fix inaccurate expiring/outdated SVID sync metrics | [`#7230`](https://github.com/spiffe/spire/pull/7230) |
 | <img src="https://cdn.simpleicons.org/thanos/6D49FF" width="18"/> | **thanos-io/objstore** | Support a custom GCS API endpoint through the endpoint config option | [`#270`](https://github.com/thanos-io/objstore/pull/270) |
 | <img src="https://cdn.simpleicons.org/saltproject/57BCAD" width="18"/> | **saltstack/salt** | Fix file.managed omitting mode from changes when creating a file | [`#70084`](https://github.com/saltstack/salt/pull/70084) |
@@ -201,14 +201,14 @@ I write on LinkedIn about platform details that usually pass unchecked: how Azur
 
 </div>
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/divider.svg?v=5" width="100%" alt="" />
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/footer.svg?v=2" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/footer.svg?v=5" width="100%" alt="" />
 
 <a href="mailto:gabriel.harnagea06@gmail.com"><img src="https://img.shields.io/badge/Get%20in%20touch-1F6FEB?style=for-the-badge&logo=minutemailer&logoColor=white&labelColor=0D1117" alt="" /></a>
-<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=3" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/gabriel-harnagea/"><img src="https://raw.githubusercontent.com/HarnageaGabriel/HarnageaGabriel/main/assets/pill-linkedin.svg?v=5" alt="LinkedIn" /></a>
 
 <br/>
 

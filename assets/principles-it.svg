@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Come lavorano i miei strumenti: INPUT repo, cluster, log CT, endpoint; LETTURA accesso read-only; DECISIONE regole deterministiche, nessun LLM; REPORT tabella, JSON, SARIF. Non scrive mai.">
+  <defs>
+    <style>
+      @keyframes qfadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes qdash { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -22; } }
+      @keyframes qdashback { from { stroke-dashoffset: 0; } to { stroke-dashoffset: 18; } }
+      @keyframes qpacket { 0% { transform: translateX(0); } 100% { transform: translateX(870px); } }
+      .qfu { animation: qfadeUp 0.8s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+      .qd1 { animation-delay: 0.1s; } .qd2 { animation-delay: 0.3s; } .qd3 { animation-delay: 0.5s; } .qd4 { animation-delay: 0.7s; } .qd5 { animation-delay: 0.9s; }
+      .qflow { stroke-dasharray: 5 6; animation: qdash 1s linear infinite; }
+      .qback { stroke-dasharray: 4 5; animation: qdashback 1.2s linear infinite; }
+      .qpkt { animation: qpacket 6s linear infinite; }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+    <g class="qfu qd1">
+      <rect x="40" y="50" width="250" height="110" rx="12" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+      <text x="165" y="88" font-size="16" font-weight="700" letter-spacing="2" fill="#58A6FF">INPUT</text>
+      <text x="165" y="122" font-size="12" fill="#E6EDF3">repo, cluster,</text>
+      <text x="165" y="140" font-size="12" fill="#8B949E">log CT, endpoint</text>
+    </g>
+    <g class="qfu qd2">
+      <rect x="330" y="50" width="250" height="110" rx="12" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+      <text x="455" y="88" font-size="16" font-weight="700" letter-spacing="2" fill="#58A6FF">LETTURA</text>
+      <text x="455" y="122" font-size="12" fill="#E6EDF3">accesso read-only</text>
+    </g>
+    <g class="qfu qd3">
+      <rect x="620" y="50" width="250" height="110" rx="12" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+      <text x="745" y="88" font-size="16" font-weight="700" letter-spacing="2" fill="#58A6FF">DECISIONE</text>
+      <text x="745" y="122" font-size="12" fill="#E6EDF3">regole deterministiche,</text>
+      <text x="745" y="140" font-size="12" fill="#8B949E">nessun LLM</text>
+    </g>
+    <g class="qfu qd4">
+      <rect x="910" y="50" width="250" height="110" rx="12" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+      <text x="1035" y="88" font-size="16" font-weight="700" letter-spacing="2" fill="#58A6FF">REPORT</text>
+      <text x="1035" y="122" font-size="12" fill="#E6EDF3">tabella, JSON, SARIF</text>
+    </g>
+  </g>
+
+  <g stroke="#58A6FF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line class="qflow" x1="292" y1="105" x2="320" y2="105"/>
+    <path d="M320 100 L328 105 L320 110"/>
+    <line class="qflow" x1="582" y1="105" x2="610" y2="105"/>
+    <path d="M610 100 L618 105 L610 110"/>
+    <line class="qflow" x1="872" y1="105" x2="900" y2="105"/>
+    <path d="M900 100 L908 105 L900 110"/>
+  </g>
+
+  <g class="qpkt">
+    <circle cx="165" cy="105" r="7" fill="#39D0D8" opacity="0.25"/>
+    <circle cx="165" cy="105" r="4" fill="#39D0D8"/>
+  </g>
+
+  <g class="qfu qd5">
+    <path class="qback" d="M455 160 V205 H240" fill="none" stroke="#8B949E" stroke-width="1.5"/>
+    <path d="M248 199 L240 205 L248 211" fill="none" stroke="#8B949E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M344 199 L356 211 M356 199 L344 211" stroke="#58A6FF" stroke-width="2" stroke-linecap="round"/>
+    <text x="350" y="234" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8B949E" text-anchor="middle">non scrive mai</text>
+    <g stroke="#58A6FF" stroke-width="1.5" fill="#10161F">
+      <path d="M185 205 L197 193 M185 205 L197 217" fill="none"/>
+      <circle cx="180" cy="205" r="5"/>
+      <circle cx="202" cy="193" r="5"/>
+      <circle cx="202" cy="217" r="5"/>
+    </g>
+  </g>
+</svg>

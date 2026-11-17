@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Containers">
+  <defs>
+    <style>
+      @keyframes ccframe { 0%, 100% { stroke-opacity: 0.35; } 50% { stroke-opacity: 0.9; } }
+      @keyframes ccglyph { 0%, 100% { stroke: #58A6FF; } 50% { stroke: #39D0D8; } }
+      @keyframes ccglow { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.7; } }
+      .ccf { animation: ccframe 3s ease-in-out infinite 0.9s; }
+      .ccg { animation: ccglyph 3s ease-in-out infinite 0.9s; }
+      .ccl { animation: ccglow 3s ease-in-out infinite 0.9s; }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+    <radialGradient id="ccglowg" cx="0.5" cy="0.45" r="0.65">
+      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#10161F"/>
+  <rect class="ccl" x="2" y="2" width="60" height="60" rx="14" fill="url(#ccglowg)" opacity="0.5"/>
+  <rect class="ccf" x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#1F6FEB" stroke-width="1.5" stroke-opacity="0.6"/>
+  <g class="ccg" fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 12 L50 21 L32 30 L14 21 Z"/>
+    <path d="M14 21 V43 L32 52 V30"/>
+    <path d="M50 21 V43 L32 52"/>
+  </g>
+</svg>

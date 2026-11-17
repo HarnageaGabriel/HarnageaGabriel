@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 150" width="580" height="150" role="img" aria-label="disdetta: Trova ogni immagine e chart Bitnami da cui cluster e repo GitOps dipendono ancora, e pianifica l'uscita per componente.">
+  <defs><style>.in{animation:fadeup .7s cubic-bezier(.22,.61,.36,1) both}@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.run{stroke-dasharray:90 1345.4;animation:run 6s linear infinite}@keyframes run{to{stroke-dashoffset:-1435.4}}.dot{transform-box:fill-box;transform-origin:center;animation:dot 2s ease-in-out infinite}@keyframes dot{0%,100%{opacity:.45;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style></defs>
+
+  <g class="in">
+  <rect x="0.5" y="0.5" width="579" height="149" rx="12" fill="#10161f" stroke="#2b3949"/>
+  <rect class="run" x="0.5" y="0.5" width="579" height="149" rx="12" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-opacity="0.8"/>
+  <text x="20" y="36" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15" font-weight="700" fill="#e6edf3" letter-spacing="0.5">disdetta</text>
+  <rect x="465.3" y="18" width="94.7" height="22" rx="11" fill="#0d1117" stroke="#d29922" stroke-opacity="0.55"/>
+  <circle class="dot" cx="478.3" cy="29" r="3" fill="#d29922"/>
+  <text x="487.3" y="33" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="600" fill="#d29922" letter-spacing="0.5">pre-alpha</text>
+  <text x="20" y="62" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#8b949e" letter-spacing="0.3">Trova ogni immagine e chart Bitnami da cui cluster e repo GitOps dipendono</text>
+  <text x="20" y="80" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11.5" fill="#8b949e" letter-spacing="0.3">ancora, e pianifica l'uscita per componente.</text>
+  <rect x="20" y="102" width="33.1" height="24" rx="6" fill="#0d1117" stroke="#2b3949"/>
+  <text x="30" y="118" font-family="'JetBrains Mono','SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="600" fill="#58a6ff" letter-spacing="0.5">Go</text>
+  </g>
+</svg>

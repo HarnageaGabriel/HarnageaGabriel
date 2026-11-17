@@ -1,59 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220" role="img" aria-label="Gabriel Harnagea — DevOps and Platform Engineer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Gabriel Harnagea - DevOps and Platform Engineer - Azure, Kubernetes, GitOps, Terraform. Animated delivery pipeline: commit, build, test, deploy, verify.">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117">
-        <animate attributeName="stop-color" values="#0d1117;#111a2e;#0d1117" dur="12s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="55%" stop-color="#132a4a">
-        <animate attributeName="stop-color" values="#132a4a;#1b3b66;#132a4a" dur="12s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#1f6feb">
-        <animate attributeName="stop-color" values="#1f6feb;#2ea9ff;#1f6feb" dur="12s" repeatCount="indefinite"/>
-      </stop>
+    <style>
+      @keyframes hfadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes hdrift1 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(34px, -22px); } }
+      @keyframes hdrift2 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-28px, 18px); } }
+      @keyframes hdrift3 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(20px, -14px); } }
+      @keyframes hscan { from { transform: translateX(0); } to { transform: translateX(1360px); } }
+      @keyframes hshimmer { 0% { transform: translateX(-240px); } 55%, 100% { transform: translateX(560px); } }
+      @keyframes hdash { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -24; } }
+      @keyframes hring { 0% { transform: scale(0.6); opacity: 0.9; } 70%, 100% { transform: scale(1.6); opacity: 0; } }
+      @keyframes hcore { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+      @keyframes hpacket { 0% { transform: translate(0, 0); } 25% { transform: translate(110px, -80px); } 50% { transform: translate(220px, 0); } 75% { transform: translate(330px, -80px); } 100% { transform: translate(440px, 0); } }
+      .hfu { animation: hfadeUp 0.8s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+      .hd1 { animation-delay: 0.15s; } .hd2 { animation-delay: 0.4s; } .hd3 { animation-delay: 0.65s; } .hd4 { animation-delay: 0.9s; }
+      .hb1 { animation: hdrift1 16s ease-in-out infinite; }
+      .hb2 { animation: hdrift2 20s ease-in-out infinite; }
+      .hb3 { animation: hdrift3 24s ease-in-out infinite; }
+      .hsc { animation: hscan 8s linear infinite; }
+      .hsh { animation: hshimmer 5s ease-in-out infinite; }
+      .he { stroke-dasharray: 5 7; animation: hdash 1s linear infinite; }
+      .hr { transform-box: fill-box; transform-origin: center; animation: hring 3.5s ease-out infinite; }
+      .hc { animation: hcore 3.5s ease-in-out infinite; }
+      .hp { animation: hpacket 7s linear infinite; }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="60%" stop-color="#10161F"/>
+      <stop offset="100%" stop-color="#132A4A"/>
     </linearGradient>
-
-    <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#39d0d8" stop-opacity="0.30"/>
+    <linearGradient id="hname" gradientUnits="userSpaceOnUse" x1="70" y1="0" x2="480" y2="0">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="50%" stop-color="#E6EDF3"/>
+      <stop offset="100%" stop-color="#39D0D8"/>
     </linearGradient>
-
-    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2ea9ff" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0.55"/>
+    <linearGradient id="hshine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E6EDF3" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E6EDF3" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#E6EDF3" stop-opacity="0"/>
     </linearGradient>
-
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#9ad4ff" stop-opacity="0.85"/>
+    <linearGradient id="hscanbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
     </linearGradient>
+    <pattern id="hgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#58A6FF" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="hblur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+    <clipPath id="hclip"><rect width="1200" height="300" rx="16"/></clipPath>
+    <clipPath id="hnameclip">
+      <text x="70" y="128" font-family="system-ui, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="1">Gabriel Harnagea</text>
+    </clipPath>
   </defs>
 
-  <rect width="1200" height="220" fill="url(#sky)"/>
+  <g clip-path="url(#hclip)">
+    <rect width="1200" height="300" fill="url(#hbg)"/>
+    <rect width="1200" height="300" fill="url(#hgrid)"/>
 
-  <!-- drifting grid, a faint nod to a cluster topology -->
-  <g stroke="#58a6ff" stroke-opacity="0.10" stroke-width="1">
-    <path d="M0 40 H1200 M0 90 H1200 M0 140 H1200 M0 190 H1200"/>
-    <g>
-      <path d="M60 0 V220 M180 0 V220 M300 0 V220 M420 0 V220 M540 0 V220 M660 0 V220 M780 0 V220 M900 0 V220 M1020 0 V220 M1140 0 V220"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;120 0;0 0" dur="18s" repeatCount="indefinite"/>
+    <circle class="hb1" cx="200" cy="60" r="90" fill="#1F6FEB" opacity="0.16" filter="url(#hblur)"/>
+    <circle class="hb2" cx="1050" cy="240" r="110" fill="#2EA9FF" opacity="0.12" filter="url(#hblur)"/>
+    <circle class="hb3" cx="620" cy="300" r="80" fill="#39D0D8" opacity="0.08" filter="url(#hblur)"/>
+
+    <rect class="hsc" x="-160" y="0" width="120" height="300" fill="url(#hscanbg)"/>
+
+    <g font-family="system-ui, 'Segoe UI', Helvetica, Arial, sans-serif">
+      <text class="hfu hd1" x="70" y="128" font-size="44" font-weight="700" letter-spacing="1" fill="url(#hname)">Gabriel Harnagea</text>
+      <g clip-path="url(#hnameclip)">
+        <rect class="hsh" x="70" y="84" width="140" height="56" fill="url(#hshine)"/>
+      </g>
+      <text class="hfu hd2" x="70" y="164" font-size="17" font-weight="500" letter-spacing="2.5" fill="#8B949E">DevOps &amp; Platform Engineer</text>
+      <text class="hfu hd3" x="70" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.5" fill="#58A6FF">Azure / Kubernetes / GitOps / Terraform</text>
+    </g>
+
+    <text class="hfu hd4" x="660" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="2" fill="#8B949E">// DELIVERY PIPELINE</text>
+
+    <g stroke="#1F6FEB" stroke-width="1.5" stroke-opacity="0.7" fill="none">
+      <line class="he" x1="660" y1="205" x2="770" y2="125"/>
+      <line class="he" x1="770" y1="125" x2="880" y2="205"/>
+      <line class="he" x1="880" y1="205" x2="990" y2="125"/>
+      <line class="he" x1="990" y1="125" x2="1100" y2="205"/>
+    </g>
+
+    <g class="hp">
+      <circle cx="660" cy="205" r="8" fill="#39D0D8" opacity="0.25"/>
+      <circle cx="660" cy="205" r="4.5" fill="#39D0D8"/>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B949E" text-anchor="middle">
+      <g transform="translate(660 205)">
+        <circle class="hr" r="16" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+        <circle r="13" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+        <circle class="hc" r="4" fill="#58A6FF"/>
+        <text y="34">commit</text>
+      </g>
+      <g transform="translate(770 125)">
+        <circle class="hr" style="animation-delay: 0.7s" r="16" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+        <circle r="13" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+        <circle class="hc" style="animation-delay: 0.7s" r="4" fill="#58A6FF"/>
+        <text y="34">build</text>
+      </g>
+      <g transform="translate(880 205)">
+        <circle class="hr" style="animation-delay: 1.4s" r="16" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+        <circle r="13" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+        <circle class="hc" style="animation-delay: 1.4s" r="4" fill="#58A6FF"/>
+        <text y="34">test</text>
+      </g>
+      <g transform="translate(990 125)">
+        <circle class="hr" style="animation-delay: 2.1s" r="16" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+        <circle r="13" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+        <circle class="hc" style="animation-delay: 2.1s" r="4" fill="#58A6FF"/>
+        <text y="34">deploy</text>
+      </g>
+      <g transform="translate(1100 205)">
+        <circle class="hr" style="animation-delay: 2.8s" r="16" fill="none" stroke="#58A6FF" stroke-width="1.5"/>
+        <circle r="13" fill="#10161F" stroke="#1F6FEB" stroke-width="1.5"/>
+        <circle class="hc" style="animation-delay: 2.8s" r="4" fill="#58A6FF"/>
+        <text y="34">verify</text>
+      </g>
     </g>
   </g>
 
-  <!-- back wave -->
-  <g>
-    <path fill="url(#wave1)" d="M0 168 C 150 138, 300 198, 450 168 C 600 138, 750 198, 900 168 C 1050 138, 1150 188, 1200 168 L1200 220 L0 220 Z"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0;-60 0;0 0" dur="9s" repeatCount="indefinite"/>
-  </g>
-
-  <!-- front wave -->
-  <g>
-    <path fill="url(#wave2)" d="M0 186 C 160 162, 320 210, 480 186 C 640 162, 800 210, 960 186 C 1100 166, 1160 200, 1200 186 L1200 220 L0 220 Z"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0;70 0;0 0" dur="7s" repeatCount="indefinite"/>
-  </g>
-
-  <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace" text-anchor="middle">
-    <text x="600" y="96" font-size="46" font-weight="700" fill="#eaf3ff" letter-spacing="1.5">Gabriel Harnagea</text>
-    <text x="600" y="132" font-size="16" font-weight="500" fill="#9fb6d0" letter-spacing="3.2">DevOps &amp; Platform Engineer</text>
-    <text x="600" y="158" font-size="13" fill="#58a6ff" letter-spacing="2.4">Azure · Kubernetes · GitOps · Terraform</text>
-  </g>
+  <rect x="0.75" y="0.75" width="1198.5" height="298.5" rx="16" fill="none" stroke="#1F6FEB" stroke-opacity="0.35" stroke-width="1.5"/>
 </svg>

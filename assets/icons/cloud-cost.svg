@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Cloud cost">
+  <defs>
+    <style>
+      @keyframes ctframe { 0%, 100% { stroke-opacity: 0.35; } 50% { stroke-opacity: 0.9; } }
+      @keyframes ctglyph { 0%, 100% { stroke: #58A6FF; } 50% { stroke: #39D0D8; } }
+      @keyframes ctglow { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.7; } }
+      .ctf { animation: ctframe 3s ease-in-out infinite 1.2s; }
+      .ctg { animation: ctglyph 3s ease-in-out infinite 1.2s; }
+      .ctl { animation: ctglow 3s ease-in-out infinite 1.2s; }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+    <radialGradient id="ctglowg" cx="0.5" cy="0.45" r="0.65">
+      <stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1F6FEB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#10161F"/>
+  <rect class="ctl" x="2" y="2" width="60" height="60" rx="14" fill="url(#ctglowg)" opacity="0.5"/>
+  <rect class="ctf" x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#1F6FEB" stroke-width="1.5" stroke-opacity="0.6"/>
+  <g class="ctg" fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 36 A8 8 0 0 1 20 20 A11 11 0 0 1 41 17 A10 10 0 0 1 46 36 Z"/>
+    <path d="M32 42 V54 M27 49 L32 54 L37 49"/>
+  </g>
+</svg>
